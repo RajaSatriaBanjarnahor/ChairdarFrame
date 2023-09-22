@@ -1,0 +1,14 @@
+.nav-item{
+    margin: 0 auto ;
+}
+
+.nav-pills .nav-link {
+    color: #878E9D; /* Use the color code or name for dark text */
+  }
+
+.corners{
+    border-radius: 90px;
+    background: #E6E8EC;
+    padding: 8px 10px;
+    width: 200px;   
+}
