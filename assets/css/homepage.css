@@ -1,14 +1,22 @@
-.nav-item{
-    margin: 0 auto ;
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.nav-pills .nav-link {
-    color: #878E9D; /* Use the color code or name for dark text */
-  }
+.sectionView{
+    padding: 9vh 0;
+}
 
-.corners{
-    border-radius: 90px;
-    background: #E6E8EC;
-    padding: 8px 10px;
-    width: 200px;   
+.kolomview{
+    margin: 5%;
+    width: 40%;
+    padding-left: 5%;
+}
+
+.btn-rounded {
+    padding: 5px 25px;
+    border-radius: 50px!important;
+}
+
+.negmar{
+    margin-top: -50px;
 }
