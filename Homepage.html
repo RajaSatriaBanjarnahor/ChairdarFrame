@@ -5,10 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ChairdarFrame</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="assets/css/loadpage.css">
   <link rel="stylesheet" href="assets/css/navbar.css">
@@ -18,406 +16,474 @@
 </head>
 
 <body>
-  <div id="loading">
-    <img id="loading-image" src="https://media.tenor.com/wpSo-8CrXqUAAAAj/loading-loading-forever.gif"
-      alt="Loading..." />
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="loader"></div>
   </div>
+  <!--end preloader -->
 
+  <!-- Content -->
+  <div class="content">
 
-  <!-- Header -->
-  <div class="container-fluid fw-bold align-items-center ">
-    <header class="d-flex align-items-center flex-wrap justify-content-center py-3 border-bottom">
-      <div class="col-2 d-flex justify-content-center">
-        <a href="#" class="d-flex justify-content-center link-body-emphasis text-decoration-none corners">
-          <span class="fs-5">ChairdarFrame</span>
-        </a>
-      </div>
-      <div class="col-2 text-center" w>
-        <div class="vr" style="height: 45px;width: 2px;background-color: #878E9D;"></div>
-      </div>
-      <ul class="nav nav-pills col-6">
-        <li class="nav-item"><a href="#" class="nav-link" aria-current="page">FRAMES</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">ARTS PRINTS</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">PRODUCTS</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">BLOG</a></li>
-      </ul>
-    </header>
-  </div>
-  <!-- end Header -->
+    <!-- Header -->
+    <div class="container-fluid bg-light fw-bold align-items-center sticky-top">
+      <header class="d-flex align-items-center flex-wrap justify-content-center py-lg-3 pt-sm-3 border-bottom">
+        <div class="col-lg-2 col-sm-12 col-9 d-flex justify-content-md-center">
+          <a href="Homepage.html" class="d-flex justify-content-center link-body-emphasis text-decoration-none corners">
+            <span class="fs-5">ChairdarFrame</span>
+          </a>
+        </div>
+        <div class="col-2 text-center d-lg-block d-none">
+          <div class="vr" style="height: 45px;width: 2px;background-color: #878E9D;"></div>
+        </div>
+        <div class="d-flex d-md-none">
+          <nav class="navbar navbar-light bg-light">
+            <div class="container">
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-2x fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="collapse" id="navbarToggleExternalContent3">
+          <div class="bg-light">
+            <ul class="nav nav-pills col-12 d-grid text-start">
+              <li class="nav-item"><a href="#" class="nav-link" aria-current="page">FRAMES</a></li>
+              <li class="nav-item"><a href="artprints.html" class="nav-link">ARTS PRINTS</a></li>
+              <li class="nav-item"><a href="Products.html" class="nav-link">PRODUCTS</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">BLOG</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="d-none d-md-flex nav nav-pills col-lg-6 col-md-12 text-md-center text-start">
+          <li class="nav-item"><a href="#" class="nav-link" aria-current="page">FRAMES</a></li>
+          <li class="nav-item"><a href="artprints.html" class="nav-link">ARTS PRINTS</a></li>
+          <li class="nav-item"><a href="Products.html" class="nav-link">PRODUCTS</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">BLOG</a></li>
+        </ul>
 
-  <!-- Homepage -->
-  <div class="container-fluid sectionView" style="background-color: #CCCCCC;">
-    <div class="container-fluid row">
-      <div class="col-6 kolomview">
-        <span class="fs-1 fw-bold">Abadikan Momen Berharga Anda!</span><br><br>
-        <p>Dalam dunia yang terus bergerak cepat, kita seringkali terlalu sibuk untuk merenung dan menghargai
-          momen-momen berharga yang telah kita alami.Abadikan Momen Berharga Anda dengan bingkai foto kami yang akan
-          memberikan sentuhan khusus pada setiap potret, mengubahnya menjadi cerita visual yang selalu dapat Anda
-          nikmati dan bagikan kepada generasi mendatang.</p>
-        <button type="button" class="btn btn-rounded btn-dark mt-1 ">Pesan Disini</button>
-      </div>
-      <div class="col-6 m-auto text-center">
-        <img class="" width="60%" src="https://drive.google.com/uc?export=view&id=1GM3Z9fink1Dm2lIMcwCwksIzpuitKEq3"
-          alt="">
+      </header>
+    </div>
+
+    <!-- end Header -->
+
+    <!-- Homepage -->
+    <div class="container-fluid sectionView" style="background-color: #CCCCCC;">
+      <div class="container-fluid row mx-auto d-flex">
+        <div class="col-md-6 col-12 order-md-1 order-2 text-md-start text-center kolomview">
+          <span class="fs-1 fw-bold">Abadikan Momen Berharga Anda!</span><br><br>
+          <p class="px-md-0 px-3 fs-md-6 fs-6">Dalam dunia yang terus bergerak cepat, kita seringkali terlalu sibuk
+            untuk
+            merenung dan menghargai
+            momen-momen berharga yang telah kita alami.Abadikan Momen Berharga Anda dengan bingkai foto kami yang akan
+            memberikan sentuhan khusus pada setiap potret, mengubahnya menjadi cerita visual yang selalu dapat Anda
+            nikmati dan bagikan kepada generasi mendatang.</p>
+          <a href="#pesanCustom"><button type="button" class="btn btn-rounded btn-dark mt-1">Pesan Disini</button></a>
+        </div>
+        <div class="col-md-6 col-12 order-md-2 order-1 m-auto text-center">
+          <img class="imgWidth" src="https://drive.google.com/uc?export=view&id=1GM3Z9fink1Dm2lIMcwCwksIzpuitKEq3"
+            alt="">
+        </div>
       </div>
     </div>
-  </div>
-  <!-- end Homepage -->
+    <!-- end Homepage -->
 
-  <!-- Produk Popular -->
-  <div class="container-fluid text-center pt-5">
-    <span class="fs-3 lead">Produk Popular</span>
-    <section class="pt-1 pb-5">
-      <div class="container pb-5">
-        <div class="row">
-          <div class="col-12">
-            <h3 class="mb-3 fs-2 text-center fw-bold">Bingkai Terbaik Kami</h3>
-          </div>
-          <div class="text-end negmar">
-            <a class="btn btn-outline-secondary rounded-circle mb-3 mr-1" href="#carouselSlider" role="button"
-              data-bs-slide="prev">
-              <i class="fa fa-arrow-left"></i>
-            </a>
-            <a class="btn btn-outline-secondary rounded-circle mb-3 " href="#carouselSlider" role="button"
-              data-bs-slide="next">
-              <i class="fa fa-arrow-right"></i>
-            </a>
-          </div>
-          <div class="col-12">
-            <div id="carouselSlider" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img class="img-fluid"
-                          src="https://drive.google.com/uc?export=view&id=1xzS9FcRz7Ctc5ZRoDeR2XAhM5dXfCi_4">
-                        <div class="card-body text-start">
-                          <div class="row fw-bold">
-                            <div class="col-8">
-                              <h4 class="card-title">Gold Frame</h4>
-                            </div>
-                            <div class="col-4">
-                              <div class="border border-dark rounded text-center"><span class="fs-6">Rp 749.000</span>
+    <!-- Produk Popular -->
+    <div class="container-fluid text-center pt-5">
+      <span class="fs-3 lead">Produk Popular</span>
+      <section class="pt-1 pb-md-5">
+        <div class="container pb-md-5">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="mb-3 fs-2 text-center fw-bold">Bingkai Terbaik Kami</h3>
+            </div>
+            <div class="text-md-end text-center d-md-block d-none negmar">
+              <a class="btn btn-outline-secondary rounded-circle mb-3 mr-1" href="#carouselSlider" role="button"
+                data-bs-slide="prev">
+                <i class="fa fa-arrow-left"></i>
+              </a>
+              <a class="btn btn-outline-secondary rounded-circle mb-3 " href="#carouselSlider" role="button"
+                data-bs-slide="next">
+                <i class="fa fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="col-12 ">
+              <div id="carouselSlider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img class="img-fluid"
+                            src="https://drive.google.com/uc?export=view&id=1xzS9FcRz7Ctc5ZRoDeR2XAhM5dXfCi_4">
+                          <div class="card-body text-start">
+                            <div class="row fw-bold">
+                              <div class="col-md-7 col-12">
+                                <h4 class="card-title">Gold Frame</h4>
+                              </div>
+                              <div class="col-md-5 col-12">
+                                <div class="border border-dark rounded text-center  d-md-block d-none">
+                                  <span class="fs-6">Rp 749.000</span>
+                                </div>
+                                <div class="border-0 text-start d-md-none d-block">
+                                  <span class="fs-6">Rp 749.000</span>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <p class="card-text">kemewahan ke setiap momen berharga.</p>
-                          <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img class="img-fluid"
-                          src="https://drive.google.com/uc?export=view&id=1nd9AOtJsgdLVZ9VZ9uduYSCHdM4rIUHy">
-                        <div class="card-body text-start">
-                          <div class="row fw-bold">
-                            <div class="col-8">
-                              <h4 class="card-title">Classic Black Frame</h4>
-                            </div>
-                            <div class="col-4">
-                              <div class="border border-dark rounded text-center"><span class="fs-6 ">Rp
-                                  449.000</span></div>
+                            <p class="card-text">kemewahan ke setiap momen berharga.</p>
+                            <div class="text-center">
+                              <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
                             </div>
                           </div>
-                          <p class="card-text">Abadikan dengan sentuhan klasik.</p>
-                          <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
-
                         </div>
                       </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img class="img-fluid"
-                          src="https://drive.google.com/uc?export=view&id=1WdUR9-1V0f6zqPthi_2RdGQ-16xIlSe5">
-                        <div class="card-body text-start">
-                          <div class="row fw-bold">
-                            <div class="col-8">
-                              <h4 class="card-title">Luxury White Frame</h4>
-                            </div>
-                            <div class="col-4">
-                              <div class="border border-dark rounded text-center"><span class="fs-6">Rp 899.000</span>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img class="img-fluid"
+                            src="https://drive.google.com/uc?export=view&id=1nd9AOtJsgdLVZ9VZ9uduYSCHdM4rIUHy">
+                          <div class="card-body text-start">
+                            <div class="row fw-bold">
+                              <div class="col-md-7 col-12">
+                                <h4 class="card-title">Classic Black Frame</h4>
+                              </div>
+                              <div class="col-md-5 col-12">
+                                <div class="border border-dark rounded text-center  d-md-block d-none">
+                                  <span class="fs-6">Rp 449.000</span>
+                                </div>
+                                <div class="border-0 text-start d-md-none d-block">
+                                  <span class="fs-6">Rp 449.000</span>
+                                </div>
                               </div>
                             </div>
+                            <p class="card-text">Abadikan dengan sentuhan klasik.</p>
+                            <div class="text-center">
+                              <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
+                            </div>
                           </div>
-                          <p class="card-text">keindahan putih yang mewah.</p>
-                          <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
-
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img class="img-fluid"
+                            src="https://drive.google.com/uc?export=view&id=1WdUR9-1V0f6zqPthi_2RdGQ-16xIlSe5">
+                          <div class="card-body text-start">
+                            <div class="row fw-bold">
+                              <div class="col-md-7 col-12">
+                                <h4 class="card-title">Luxury White Frame</h4>
+                              </div>
+                              <div class="col-md-5 col-12">
+                                <div class="border border-dark rounded text-center  d-md-block d-none">
+                                  <span class="fs-6">Rp 899.000</span>
+                                </div>
+                                <div class="border-0 text-start d-md-none d-block">
+                                  <span class="fs-6">Rp 899.000</span>
+                                </div>
+                              </div>
+                            </div>
+                            <p class="card-text">keindahan putih yang mewah.</p>
+                            <div class="text-center">
+                              <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img class="img-fluid"
-                          src="https://drive.google.com/uc?export=view&id=1rbA79MrlfQXI6ILRTy_k_1Ts5vmLDGxm">
-                        <div class="card-body text-start">
-                          <div class="row fw-bold">
-                            <div class="col-8">
-                              <h4 class="card-title">White Frame</h4>
-                            </div>
-                            <div class="col-4">
-                              <div class="border border-dark rounded text-center"><span class="fs-6">Rp 417.000</span>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img class="img-fluid"
+                            src="https://drive.google.com/uc?export=view&id=1rbA79MrlfQXI6ILRTy_k_1Ts5vmLDGxm">
+                          <div class="card-body text-start">
+                            <div class="row fw-bold">
+                              <div class="col-md-7 col-12">
+                                <h4 class="card-title">White Frame</h4>
+                              </div>
+                              <div class="col-md-5 col-12">
+                                <div class="border border-dark rounded text-center  d-md-block d-none">
+                                  <span class="fs-6">Rp 417.000</span>
+                                </div>
+                                <div class="border-0 text-start d-md-none d-block">
+                                  <span class="fs-6">Rp 417.000</span>
+                                </div>
                               </div>
                             </div>
+                            <p class="card-text">berikan sentuhan kesederhanaan dan kecerahan.</p>
+                            <div class="text-center">
+                              <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
+                            </div>
                           </div>
-                          <p class="card-text">berikan sentuhan kesederhanaan dan kecerahan.</p>
-                          <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
-
                         </div>
                       </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img class="img-fluid"
-                          src="https://drive.google.com/uc?export=view&id=12UovtjY7KUfwRXSc1DEFG98cBDtQZ8F5">
-                        <div class="card-body text-start">
-                          <div class="row fw-bold">
-                            <div class="col-8">
-                              <h4 class="card-title">Black Frame</h4>
-                            </div>
-                            <div class="col-4">
-                              <div class="border border-dark rounded text-center"><span class="fs-6">Rp 417.000</span>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img class="img-fluid"
+                            src="https://drive.google.com/uc?export=view&id=12UovtjY7KUfwRXSc1DEFG98cBDtQZ8F5">
+                          <div class="card-body text-start">
+                            <div class="row fw-bold">
+                              <div class="col-md-7 col-12">
+                                <h4 class="card-title">Black Frame</h4>
+                              </div>
+                              <div class="col-md-5 col-12">
+                                <div class="border border-dark rounded text-center  d-md-block d-none">
+                                  <span class="fs-6">Rp 417.000</span>
+                                </div>
+                                <div class="border-0 text-start d-md-none d-block"><span class="fs-6">Rp 417.000</span>
+                                </div>
                               </div>
                             </div>
+                            <p class="card-text">tampilan lebih tajam dan terdefinisi dengan indah.</p>
+                            <div class="text-center">
+                              <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
+                            </div>
                           </div>
-                          <p class="card-text">tampilan lebih tajam dan terdefinisi dengan indah.</p>
-                          <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
-
                         </div>
                       </div>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
-                        <img class="img-fluid"
-                          src="https://drive.google.com/uc?export=view&id=1UpM183Hh29GLd00cNUT-XD7r7HlAIFLe">
-                        <div class="card-body text-start">
-                          <div class="row fw-bold">
-                            <div class="col-8">
-                              <h4 class="card-title">Wood Frame</h4>
-                            </div>
-                            <div class="col-4">
-                              <div class="border border-dark rounded text-center"><span class="fs-6">Rp 417.000</span>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img class="img-fluid"
+                            src="https://drive.google.com/uc?export=view&id=1UpM183Hh29GLd00cNUT-XD7r7HlAIFLe">
+                          <div class="card-body text-start">
+                            <div class="row fw-bold">
+                              <div class="col-md-7 col-12">
+                                <h4 class="card-title">Wood Frame</h4>
+                              </div>
+                              <div class="col-md-5 col-12">
+                                <div class="border border-dark rounded text-center  d-md-block d-none">
+                                  <span class="fs-6">Rp 417.000</span>
+                                </div>
+                                <div class="border-0 text-start d-md-none d-block">
+                                  <span class="fs-6">Rp 417.000</span>
+                                </div>
                               </div>
                             </div>
+                            <p class="card-text">tampilan dengan nuansa alami dan kehangatan.</p>
+                            <div class="text-center">
+                              <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
+                            </div>
                           </div>
-                          <p class="card-text">tampilan dengan nuansa alami dan kehangatan.</p>
-                          <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </div>
-  <!-- end Produk Popular -->
+      </section>
+    </div>
+    <!-- end Produk Popular -->
 
-  <!-- why us -->
-  <div class="container-fluid my-5 pt-5">
-    <h2 class="text-center mb-5">Apa yang membuat merek kami berbeda</h2>
-    <div class="row row-cols-1 row-cols-md-4 g-4 mx-auto" style="width: 80%;">
+    <!-- why us -->
+    <div class="container-fluid my-5 pt-5">
+      <h2 class="text-center mb-5">Apa yang membuat merek kami berbeda</h2>
+      <div class="row row-cols-1 row-cols-md-4 g-4 mx-auto" style="width: 80%;">
         <div class="col">
-            <div class="card text-center">
-                <img src="https://cdn-icons-png.flaticon.com/512/1077/1077299.png?ga=GA1.1.90356030.1694061817" class="card-img-top mx-auto d-block p-4" style="width: 60%;" alt="Pengiriman Cepat">
-                <div class="card-body">
-                    <h5 class="card-title">Pengiriman Cepat</h5>
-                    <p class="card-text">Anda dapat mengandalkan kami untuk mengirimkan pesanan Anda dengan cepat dan efisien.</p>
-                </div>
+          <div class="card custom-card text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/1077/1077299.png?ga=GA1.1.90356030.1694061817"
+              class="card-img-top mx-auto d-block p-4" style="width: 60%;" alt="Pengiriman Cepat">
+            <div class="card-body">
+              <h5 class="card-title">Pengiriman Cepat</h5>
+              <p class="card-text">Anda dapat mengandalkan kami untuk mengirimkan pesanan Anda dengan cepat dan efisien.
+              </p>
             </div>
-        </div>
-        <div class="col">
-            <div class="card text-center">
-                <img src="https://cdn-icons-png.flaticon.com/512/61/61222.png?ga=GA1.1.90356030.1694061817" class="card-img-top mx-auto d-block p-4" style="width: 60%;" alt="Dibuat oleh pengrajin sejati">
-                <div class="card-body">
-                    <h5 class="card-title">Dibuat oleh pengrajin sejati</h5>
-                    <p class="card-text">Barang kerajinan buatan tangan dibuat dengan gairah dan keahlian yang nyata.</p>
-                </div>
-            </div>
+          </div>
         </div>
         <div class="col">
-            <div class="card text-center">
-                <img src="https://cdn-icons-png.flaticon.com/512/3354/3354358.png?ga=GA1.1.90356030.1694061817" class="card-img-top mx-auto d-block p-4" style="width: 60%;" alt="Harga Terbaik">
-                <div class="card-body">
-                    <h5 class="card-title">Harga Terbaik</h5>
-                    <p class="card-text">Untuk bahan dan kualitas kami, Anda tidak akan menemukan harga yang lebih baik di mana pun.</p>
-                </div>
+          <div class="card custom-card text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/61/61222.png?ga=GA1.1.90356030.1694061817"
+              class="card-img-top mx-auto d-block p-4" style="width: 60%;" alt="Dibuat oleh pengrajin sejati">
+            <div class="card-body">
+              <h5 class="card-title">Dibuat oleh pengrajin sejati</h5>
+              <p class="card-text">Barang kerajinan buatan tangan dibuat dengan gairah dan keahlian yang nyata.</p>
             </div>
+          </div>
         </div>
         <div class="col">
-            <div class="card text-center">
-                <img src="https://cdn-icons-png.flaticon.com/512/2708/2708251.png?ga=GA1.1.90356030.1694061817" class="card-img-top mx-auto d-block p-4" style="width: 60%;" alt="Kemasan daur ulang">
-                <div class="card-body">
-                    <h5 class="card-title">Kemasan daur ulang</h5>
-                    <p class="card-text">Kami bangga menggunakan kemasan daur ulang untuk mendukung lingkungan yang lebih bersih dan hijau.</p>
-                </div>
+          <div class="card custom-card text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/3354/3354358.png?ga=GA1.1.90356030.1694061817"
+              class="card-img-top mx-auto d-block p-4" style="width: 60%;" alt="Harga Terbaik">
+            <div class="card-body">
+              <h5 class="card-title">Harga Terbaik</h5>
+              <p class="card-text">Untuk bahan dan kualitas kami, Anda tidak akan menemukan harga yang lebih baik di
+                mana
+                pun.</p>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-
-
-  <!-- end why us -->
-
-  <!-- custom frame -->
-  <div class="container-fluid mt-4 border border-dark">
-    <span class="fs-3 d-flex justify-content-center fw-bold py-4 border-top border-dark">Pelayanan Kami</span>
-    <div class="row border-top border-dark">
-      <div class="col-6 text-center border border-dark">
-        <img class="img-fluid p-5" width="70%"
-          src="https://drive.google.com/uc?export=view&id=1a1jrdGuw5CJXCTlukPv_U2ck9ylmqoML" alt="">
-      </div>
-      <div class="col-6 text-center border border-dark d-flex flex-column justify-content-center">
-        <div class="container-fluid" style="width: 70%;">
-          <h6 class="fs-4">FRAMES</h6><br><br>
-          <span class="fs-1 fw-bold ">Custom Frame</span><br><br>
-          <p class="fs-5">Kami akan membuat bingkai yang disesuaikan agar sesuai dengan karya seni, poster, foto, dan
-            lainnya (termasuk kaca Akrilik)</p><br><br>
-          <button type="button" class="btn btn-outline-dark fw-bold p-4" data-bs-toggle="modal"
-            data-bs-target="#FrameModal">PESAN DISINI</button>
+        <div class="col">
+          <div class="card custom-card text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/2708/2708251.png?ga=GA1.1.90356030.1694061817"
+              class="card-img-top mx-auto d-block p-4" style="width: 60%;" alt="Kemasan daur ulang">
+            <div class="card-body">
+              <h5 class="card-title">Kemasan daur ulang</h5>
+              <p class="card-text">Kami bangga menggunakan kemasan daur ulang untuk mendukung lingkungan yang lebih
+                bersih
+                dan hijau.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- end why us -->
+
+
+    <!-- custom frame -->
+    <div id="pesanCustom" class="p-4 mb-4"></div>
+    <div class="container-fluid border border-dark">
+      <span class="fs-3 d-flex justify-content-center fw-bold py-3">Pelayanan Kami</span>
+      <div class="row border-top border-dark">
+        <div class="col-md-6 col-12 text-center border border-top-0 border-bottom-0 border-dark">
+          <img class="img-fluid imgWidth p-md-3"
+            src="https://drive.google.com/uc?export=view&id=1a1jrdGuw5CJXCTlukPv_U2ck9ylmqoML" alt="">
+        </div>
+        <div
+          class="col-md-6 col-12 pb-4 text-center border border-top-0 border-bottom-0 border-dark d-flex flex-column justify-content-center">
+          <div class="container-fluid" style="width: 80%;">
+            <!-- <h6 class="fs-4">FRAMES</h6> -->
+            <span class="fs-1 fw-bold ">Custom Frame</span><br>
+            <p class="fs-5">Kami akan membuat bingkai yang disesuaikan agar sesuai dengan karya seni, poster, foto, dan
+              lainnya (termasuk kaca Akrilik)</p>
+            <button type="button" class="btn btn-outline-dark fw-bold p-md-4" data-bs-toggle="modal"
+              data-bs-target="#FrameModal">PESAN DISINI</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal custom frame -->
+    <div class="modal fade" id="FrameModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Custom Frame Figure</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+
+              <div class="mb-3">
+                <label for="frameType" class="form-label">Frame Type</label>
+                <select class="form-select" id="frameType" name="frameType">
+                  <option value="wood" selected disabled>Pilih bahan Frame</option>
+                  <option value="wood">Wood</option>
+                  <option value="metal">Metal</option>
+                  <option value="plastic">Plastic</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="frameWidth" class="form-label">Lebar Bingkai(cm)</label>
+                <input type="number" class="form-control" id="frameWidth" name="frameWidth" required>
+              </div>
+              <div class="mb-3">
+                <label for="frameHeight" class="form-label">Tinggi Bingkai(cm)</label>
+                <input type="number" class="form-control" id="frameHeight" name="frameHeight" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="frameColorFinish" class="form-label">Warna Bingkai</label>
+                <input type="text" class="form-control" id="frameColorFinish" name="frameColorFinish" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="glassAcrylicType" class="form-label">Tipe Kaca/Akrilik</label>
+                <select class="form-select" id="glassAcrylicType" name="glassAcrylicType" required>
+                  <option value="glass" selected disabled>Pilih tipe kaca</option>
+                  <option value="glass">Kaca Biasa</option>
+                  <option value="acrylic">Kaca Anti-Glare</option>
+                  <option value="acrylic">Akrilik</option>
+                  <option value="acrylic">Kaca UV Protection</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="customImage" class="form-label">Unggah Gambar(opsional)</label><br>
+                <input type="file" class="form-control" id="customImage" name="customImage" style="display: none;">
+                <label for="customImage"
+                  style="padding: 10px 20px; cursor: pointer; background-color: #007bff; color: #fff; border: none; border-radius: 5px;">Pilih
+                  Foto</label>
+              </div>
+
+              <div class="mb-3">
+                <label for="deliveryAddress" class="form-label">Alamat Kirim</label>
+                <input type="text" class="form-control" id="deliveryAddress" name="deliveryAddress" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="contactName" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="contactName" name="contactName" required>
+              </div>
+              <div class="mb-3">
+                <label for="contactEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+              </div>
+              <div class="mb-3">
+                <label for="contactPhone" class="form-label">No. Hp</label>
+                <input type="tel" class="form-control" id="contactPhone" name="contactPhone" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="specialInstructions" class="form-label">Instruksi Khusus(opsional)</label>
+                <textarea class="form-control" id="specialInstructions" name="specialInstructions" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-primary" id="pesanButton">Pesan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal custom frame -->
+
+    <!-- end custom frame -->
+
+
+
+    <!-- footer -->
+    <div style="height: 2px;background-color: #000000;"></div>
+    <div class="bg-light">
+      <div class="container-fluid py-5" style="width: 70%;">
+        <span class="fs-3 fw-bold text-start">ChairdarFrame</span>
+        <div class="row mt-4">
+          <div class="col-md-6 order-md-1 order-2">
+            <h6 class="text-uppercase fw-bold mb-4">Kontak kami</h6>
+            <p>ChairdarFrame@gmail.com</p>
+            <p>0815-7508-9986</p>
+            <p>DS Mejobo,kec Mejobo,kab Kudus, Jawa tengah</p>
+
+            <a href="https://instagram.com/chaidarframe_mejobokudus?igshid=MzRlODBiNWFlZA=="><img
+                src="https://img.freepik.com/premium-vector/black-square-social-media-logo_197792-3367.jpg?size=626&ext=jpg&ga=GA1.1.90356030.1694061817&semt=ais"
+                width="40px" style="margin-left: -1%;"></a>
+
+          </div>
+          <div class="col-md-6 order-md-2 order-1">
+            <h6 class="text-uppercase fw-bold mb-4">Produk</h6>
+            <p><a href="#" class="text-dark text-decoration-none">Frames</a></p>
+            <p><a href="#" class="text-dark text-decoration-none">Arts Prints</a></p>
+            <p><a href="#" class="text-dark text-decoration-none">Custom Frame</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 2px;background-color: #878E9D;"></div>
+    <footer class="container-fluid">
+      <div class="bg-light text-secondary p-3 text-md-end text-center me-md-5 pe-md-5">
+        <p class="mb-0">Copyright © 2023. Seluruh hak cipta.</p>
+      </div>
+    </footer>
+    <!-- end footer -->
+
   </div>
-
-  <!-- modal custom frame -->
-  <div class="modal fade" id="FrameModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Custom Frame Figure</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-
-            <div class="mb-3">
-              <label for="frameType" class="form-label">Frame Type</label>
-              <select class="form-select" id="frameType" name="frameType">
-                <option value="wood" selected disabled>Pilih bahan Frame</option>
-                <option value="wood">Wood</option>
-                <option value="metal">Metal</option>
-                <option value="plastic">Plastic</option>
-              </select>
-            </div>
-
-            <div class="mb-3">
-              <label for="frameWidth" class="form-label">Lebar Bingkai(cm)</label>
-              <input type="number" class="form-control" id="frameWidth" name="frameWidth" required>
-            </div>
-            <div class="mb-3">
-              <label for="frameHeight" class="form-label">Tinggi Bingkai(cm)</label>
-              <input type="number" class="form-control" id="frameHeight" name="frameHeight" required>
-            </div>
-
-            <div class="mb-3">
-              <label for="frameColorFinish" class="form-label">Warna Bingkai</label>
-              <input type="text" class="form-control" id="frameColorFinish" name="frameColorFinish" required>
-            </div>
-
-            <div class="mb-3">
-              <label for="glassAcrylicType" class="form-label">Tipe Kaca/Akrilik</label>
-              <select class="form-select" id="glassAcrylicType" name="glassAcrylicType" required>
-                <option value="glass" selected disabled>Pilih tipe kaca</option>
-                <option value="glass">Kaca Biasa</option>
-                <option value="acrylic">Kaca Anti-Glare</option>
-                <option value="acrylic">Akrilik</option>
-                <option value="acrylic">Kaca UV Protection</option>
-              </select>
-            </div>
-
-            <div class="mb-3">
-              <label for="customImage" class="form-label">Unggah Gambar(opsional)</label><br>
-              <input type="file" class="form-control" id="customImage" name="customImage" style="display: none;">
-              <label for="customImage"
-                style="padding: 10px 20px; cursor: pointer; background-color: #007bff; color: #fff; border: none; border-radius: 5px;">Pilih
-                Foto</label>
-            </div>
-
-            <div class="mb-3">
-              <label for="deliveryAddress" class="form-label">Alamat Kirim</label>
-              <input type="text" class="form-control" id="deliveryAddress" name="deliveryAddress" required>
-            </div>
-
-            <div class="mb-3">
-              <label for="contactName" class="form-label">Nama</label>
-              <input type="text" class="form-control" id="contactName" name="contactName" required>
-            </div>
-            <div class="mb-3">
-              <label for="contactEmail" class="form-label">Email</label>
-              <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
-            </div>
-            <div class="mb-3">
-              <label for="contactPhone" class="form-label">No. Hp</label>
-              <input type="tel" class="form-control" id="contactPhone" name="contactPhone" required>
-            </div>
-
-            <div class="mb-3">
-              <label for="specialInstructions" class="form-label">Instruksi Khusus(opsional)</label>
-              <textarea class="form-control" id="specialInstructions" name="specialInstructions" rows="3"></textarea>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-          <button type="button" class="btn btn-primary" id="pesanButton">Pesan</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end modal custom frame -->
-
-  <!-- end custom frame -->
-
-
-
-  <!-- footer -->
-  <div style="height: 2px;background-color: #000000;"></div>
-  <div class="bg-light">
-    <div class="container py-5" style="width: 70%;">
-      <span class="fs-3 fw-bold text-start">ChairdarFrame</span>
-      <div class="row mt-4">
-        <div class="col-6">
-          <h6 class="text-uppercase fw-bold mb-4">Kontak kami</h6>
-          <p>ChairdarFrame@gmail.com</p>
-          <p>0815-7508-9986</p>
-          <p>DS Mejobo,kec Mejobo,kab Kudus, Jawa tengah</p>
-
-          <a href="https://instagram.com/chaidarframe_mejobokudus?igshid=MzRlODBiNWFlZA=="><img
-              src="https://img.freepik.com/premium-vector/black-square-social-media-logo_197792-3367.jpg?size=626&ext=jpg&ga=GA1.1.90356030.1694061817&semt=ais"
-              width="40px" style="margin-left: -1%;"></a>
-
-        </div>
-        <div class="col-6">
-          <h6 class="text-uppercase fw-bold mb-4">Produk</h6>
-          <p><a href="#" class="text-dark text-decoration-none">Frames</a></p>
-          <p><a href="#" class="text-dark text-decoration-none">Arts Prints</a></p>
-          <p><a href="#" class="text-dark text-decoration-none">Custom Frame</a></p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <div style="height: 2px;background-color: #878E9D;"></div>
-  <footer>
-    <div class="bg-light text-secondary p-3 text-end me-5 pe-5">
-      <p class="mb-0">Copyright © 2023. Seluruh hak cipta.</p>
-    </div>
-  </footer>
-  <!-- end footer -->
-
-
-
+  <!-- end Content -->
 
   <!-- Ini Bagian Script -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -426,71 +492,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <script src="assets/js/loadpage.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Memasukkan SweetAlert 2 -->
-
-  <script>
-    $(document).ready(function () {
-      const pesanButton = $("#FrameModal button.btn-primary");
-
-      pesanButton.on("click", function () {
-        const frameType = $("#frameType").val();
-        const frameWidth = $("#frameWidth").val();
-        const frameHeight = $("#frameHeight").val();
-        const frameColorFinish = $("#frameColorFinish").val();
-        const glassAcrylicType = $("#glassAcrylicType").val();
-        const customImage = $("#customImage").val();
-        const deliveryAddress = $("#deliveryAddress").val();
-        const contactName = $("#contactName").val();
-        const contactEmail = $("#contactEmail").val();
-        const contactPhone = $("#contactPhone").val();
-        const specialInstructions = $("#specialInstructions").val();
-
-
-        if (
-          !frameType || !frameWidth || !frameHeight || !frameColorFinish ||
-          !glassAcrylicType || !deliveryAddress || !contactName ||
-          !contactEmail || !contactPhone
-        ) {
-
-          Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Mohon lengkapi semua field yang diperlukan.',
-          });
-        } else {
-
-          const alertMessage = `
-                    <div style="text-align: left;">
-                        <p><strong>Frame Type:</strong> ${frameType}</p>
-                        <p><strong>Frame Width:</strong> ${frameWidth} cm</p>
-                        <p><strong>Frame Height:</strong> ${frameHeight} cm</p>
-                        <p><strong>Frame Color/Finish:</strong> ${frameColorFinish}</p>
-                        <p><strong>Glass/Acrylic Type:</strong> ${glassAcrylicType}</p>
-                        <p><strong>Custom Image:</strong> ${customImage}</p>
-                        <p><strong>Delivery Address:</strong> ${deliveryAddress}</p>
-                        <p><strong>Contact Name:</strong> ${contactName}</p>
-                        <p><strong>Contact Email:</strong> ${contactEmail}</p>
-                        <p><strong>Contact Phone:</strong> ${contactPhone}</p>
-                        <p><strong>Special Instructions:</strong> ${specialInstructions}</p>
-                    </div>
-                `;
-
-
-          Swal.fire({
-            icon: 'success',
-            title: 'Pesanan berhasil!',
-            html: alertMessage,
-          }).then(function () {
-            // Tutup modal dengan jQuery
-            $("#FrameModal").modal("hide");
-          });
-
-        }
-      });
-    });
-  </script>
+  <script src="assets/js/loadpage.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="assets/js/customframe.js"></script>
 </body>
 
 </html>
