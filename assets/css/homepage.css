@@ -1,42 +1,103 @@
 * {
     margin: 0;
 }
-body{
+
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-@media only screen and (max-width: 600px) {
-    .sectionView{
+@media only screen and (max-width: 320px) {
+    .sectionView {
         padding: 5vh 0;
     }
-    
-    .imgWidth{
+
+    .imgWidth {
         width: 90%;
-    }    
+    }
+
+    div.card.customWU {
+        height: 45vh;
+    }
 }
+
+@media only screen and (min-width: 321px) {
+    .sectionView {
+        padding: 5vh 0;
+    }
+
+    .imgWidth {
+        width: 90%;
+    }
+
+    div.card.customWU{
+        height: 100%;
+    }
+}
+
 @media only screen and (min-width: 601px) {
-    .sectionView{
-        padding: 10vh 0;
+    .sectionView {
+        padding: 5vh 0;
     }
 
-    .imgWidth{
-        width: 70%;
+    .imgWidth {
+        width: 75%;
     }
 
-    .kolomview{
-        margin: 5%;
-        width: 40%;
-        padding-left: 5%;
+    div.card.customCarousel{
+        height: 350px;
     }
-    
-    .negmar{
+
+    div.card.customWU{
+        height: 250px;
+    }
+
+    .negmar {
         margin-top: -50px;
     }
 }
 
+@media only screen and (min-width: 1001px) {
+    .sectionView {
+        padding: 10vh 0;
+    }
+
+    .imgWidth {
+        width: 70%;
+    }
+
+    div.card.customCarousel{
+        height: 400px;
+    }
+
+    div.card.customWU{  
+        height: 210px;
+    }
+
+    .kolomview {
+        margin: 5%;
+        width: 40%;
+        padding-left: 5%;
+    }
+
+    .negmar {
+        margin-top: -50px;
+    }
+}
+
+div.card.customWU:hover{
+    height: 100%;
+}
+
+.custom-card .card-text {
+    display: none;
+}
+
+.custom-card:hover .card-text {
+    display: block;
+}
+
 .btn-rounded {
     padding: 5px 25px;
-    border-radius: 50px!important;
+    border-radius: 50px !important;
 }
 
 .custom-card {
@@ -44,8 +105,7 @@ body{
     cursor: pointer;
 }
 
-/* Apply the scaling transformation on hover */
 .custom-card:hover {
-    transform: scale(1.05); /* Increase the size by 5% on hover */
+    transform: scale(1.05);
+    
 }
-

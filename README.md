@@ -1,3 +1,9 @@
 # ChairdarFrame
 
-Template udah ku update untuk responsive Mobile, Tablet, Desktop 
+Pembagian Tugas
+Nama                        Tugas 
+Raja Satria Agung P B       Homepage
+Miftakhul Huda              Frames
+Tyas Nafara                 ArtPrints
+Ulfa Nadia                  Blog
+Putri Jasmine               Products
