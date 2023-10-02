@@ -7,30 +7,67 @@
   <title>ChairdarFrame</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/artprints.css">
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/loadpage.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/artprints.css">
+
+</head>
 
 <body>
-  <!-- Header -->
-  <div class="container-fluid fw-bold align-items-center">
-    <header class="d-flex align-items-center flex-wrap justify-content-center py-3 border-bottom">
-      <div class="col-2 d-flex justify-content-center">
-        <a href="#" class="d-flex justify-content-center link-body-emphasis text-decoration-none corners">
-          <span class="fs-5">ChairdarFrame</span>
-        </a>
-      </div>
-      <div class="col-2 text-center" w>
-        <div class="vr" style="height: 45px;width: 2px;background-color: #878E9D;"></div>
-      </div>
-      <ul class="nav nav-pills col-6">
-        <li class="nav-item"><a href="#" class="nav-link" aria-current="page">FRAMES</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">ARTS PRINTS</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">PRODUCTS</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">BLOG</a></li>
-      </ul>
-    </header>
+   <!-- preloader -->
+   <div class="preloader">
+    <div class="loader"></div>
   </div>
+  <!--end preloader -->
+
+  <!-- Content -->
+  <div class="content">
+
+    <!-- Header -->
+    <div class="container-fluid bg-light fw-bold align-items-center sticky-top">
+      <header class="d-flex align-items-center flex-wrap justify-content-center py-lg-3 pt-sm-3 border-bottom">
+        <div class="col-lg-2 col-sm-12 col-9 d-flex justify-content-md-center">
+          <a href="Homepage.html" class="d-flex justify-content-center link-body-emphasis text-decoration-none corners">
+            <span class="fs-5">ChairdarFrame</span>
+          </a>
+        </div>
+        <div class="col-2 text-center d-lg-block d-none">
+          <div class="vr" style="height: 45px;width: 2px;background-color: #878E9D;"></div>
+        </div>
+        <div class="d-flex d-md-none">
+          <nav class="navbar navbar-light bg-light">
+            <div class="container">
+              <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-2x fa-bars"></i>
+              </button>
+            </div>
+          </nav>
+        </div>
+        <div class="collapse" id="navbarToggleExternalContent3">
+          <div class="bg-light">
+            <ul class="nav nav-pills col-12 d-grid text-start">
+              <li class="nav-item"><a href="#" class="nav-link" aria-current="page">FRAMES</a></li>
+              <li class="nav-item"><a href="artprints.html" class="nav-link">ARTS PRINTS</a></li>
+              <li class="nav-item"><a href="Products.html" class="nav-link">PRODUCTS</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">BLOG</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="d-none d-md-flex nav nav-pills col-lg-6 col-md-12 text-md-center text-start">
+          <li class="nav-item"><a href="#" class="nav-link" aria-current="page">FRAMES</a></li>
+          <li class="nav-item"><a href="artprints.html" class="nav-link">ARTS PRINTS</a></li>
+          <li class="nav-item"><a href="Products.html" class="nav-link">PRODUCTS</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">BLOG</a></li>
+        </ul>
+
+      </header>
+    </div>
+    <!-- end Header -->
+
 
   <div class="container-fluid" style="background-color: #f5f6f6;">
     <h2>ART PRINTS</h2>
@@ -80,7 +117,7 @@
   </div>
 
   <center>
-  <div class="container">
+  <div class="designService">
     <h5>Design Service</h5>
     <p>Pilih layanan di bawah ini untuk memulai.</p>
   </div>
@@ -89,7 +126,7 @@
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col artis-Watchunting">
       <div class="card h-100" style="background-color: #EAEAEA;">
-        <img src="https://frameholic.com/images/th_printworks144.jpeg" class="card-img-top" alt="art1">
+        <img src="https://frameholic.com/images/th_printworks144.jpeg" class="card-img-top" alt="art1" height="70%">
         <div class="card-body">
           <center>
           <h5 class="card-title">Audemars Piguet Gold c.1992</h5>
@@ -97,12 +134,15 @@
         </center>
         </div>
       </div>
-      <center><button type="button" class="btn btn-dark">Lihat Detail</button></center>    
+      <center>
+        <button type="button" class="btn btn-dark">Lihat Detail</button>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#FrameModal">+Tambah Frame</button>
+      </center>    
     </div>
     
     <div class="col artis-CarlaSinowato">
       <div class="card h-100" style="background-color: #EAEAEA;">
-        <img src="https://frameholic.com/images/th_printworks150.jpg" class="card-img-top" alt="art2">
+        <img src="https://frameholic.com/images/th_printworks150.jpg" class="card-img-top" alt="art2" height="70%">
         <div class="card-body">
           <center>
           <h5 class="card-title">Anemone</h5>
@@ -110,12 +150,15 @@
         </center>
         </div>
       </div>
-      <center><button type="button" class="btn btn-dark">Lihat Detail</button></center>    
+      <center>
+        <button type="button" class="btn btn-dark">Lihat Detail</button>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#FrameModal">+Tambah Frame</button>
+      </center>    
     </div>
 
     <div class="col artis-BarnBay">
       <div class="card h-100" style="background-color: #EAEAEA;">
-        <img src="https://frameholic.com/images/th_printworks141.jpeg" class="card-img-top" alt="art3">
+        <img src="https://frameholic.com/images/th_printworks141.jpeg" class="card-img-top" alt="art3" height="70%">
         <div class="card-body">
           <center>
           <h5 class="card-title">Beach Girl</h5>
@@ -123,12 +166,15 @@
           </center>
         </div>
       </div>
-      <center><button type="button" class="btn btn-dark">Lihat Detail</button></center>    
+      <center>
+        <button type="button" class="btn btn-dark">Lihat Detail</button>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#FrameModal">+Tambah Frame</button>
+      </center>    
     </div>
 
     <div class="col artis-CarlaSinowato">
       <div class="card h-100" style="background-color: #EAEAEA;">
-        <img src="https://frameholic.com/images/th_printworks153.jpg" class="card-img-top" alt="art4">
+        <img src="https://frameholic.com/images/th_printworks153.jpg" class="card-img-top" alt="art4" height="70%">
         <div class="card-body">
           <center>
           <h5 class="card-title">Blossoms</h5>
@@ -136,12 +182,15 @@
         </center>
         </div>
       </div>
-      <center><button type="button" class="btn btn-dark">Lihat Detail</button></center>  
+      <center>
+        <button type="button" class="btn btn-dark">Lihat Detail</button>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#FrameModal">+Tambah Frame</button>
+      </center>  
       </div>
 
     <div class="col artis-Watchunting">
       <div class="card h-100" style="background-color: #EAEAEA;">
-        <img src="https://frameholic.com/images/th_printworks145.jpeg" class="card-img-top" alt="art5">
+        <img src="https://frameholic.com/images/th_printworks145.jpeg" class="card-img-top" alt="art5" height="70%">
         <div class="card-body">
           <center>
           <h5 class="card-title">Breitling 1884 c.1990</h5>
@@ -149,12 +198,15 @@
         </center>
         </div>
       </div>
-      <center><button type="button" class="btn btn-dark">Lihat Detail</button></center>  
+      <center>
+        <button type="button" class="btn btn-dark">Lihat Detail</button>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#FrameModal">+Tambah Frame</button>
+      </center>  
       </div>
 
     <div class="col artis-Watchunting">
       <div class="card h-100" style="background-color: #EAEAEA;">
-        <img src="https://frameholic.com/images/th_printworks143.jpeg" class="card-img-top" alt="art6">
+        <img src="https://frameholic.com/images/th_printworks143.jpeg" class="card-img-top" alt="art6" height="70%">
         <div class="card-body">
         <center>
           <h5 class="card-title">Bulova Accutron Black c.1969</h5>
@@ -162,12 +214,15 @@
         </center>
         </div>
       </div>
-      <center><button type="button" class="btn btn-dark">Lihat Detail</button></center>  
+      <center>
+        <button type="button" class="btn btn-dark">Lihat Detail</button>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#FrameModal">+Tambah Frame</button>
+      </center>  
       </div>
 
       <div class="col artis-MelinnieAngela">
         <div class="card h-100" style="background-color: #EAEAEA;">
-          <img src="https://frameholic.com/images/th_printworks107.jpg" class="card-img-top" alt="art7">
+          <img src="https://frameholic.com/images/th_printworks107.jpg" class="card-img-top" alt="art7" height="70%">
           <div class="card-body">
           <center>
             <h5 class="card-title">Eid</h5>
@@ -175,7 +230,10 @@
           </center>
           </div>
         </div>
-        <center><button type="button" class="btn btn-dark">Lihat Detail</button></center>  
+        <center>
+          <button type="button" class="btn btn-dark">Lihat Detail</button>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#FrameModal">+Tambah Frame</button>
+        </center>  
         </div>
 
       
@@ -193,38 +251,121 @@
 
   <div style="height: 15vh;background-color: #ffffff;"></div>
 
+  <!-- modal custom frame -->
+  <div class="modal fade" id="FrameModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Custom Frame Figure</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="mb-3">
+              <label for="frameType" class="form-label">Frame Type</label>
+              <select class="form-select" id="frameType" name="frameType">
+                <option value="wood" selected disabled>Pilih bahan Frame</option>
+                <option value="wood">Wood</option>
+                <option value="metal">Metal</option>
+                <option value="plastic">Plastic</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="frameWidth" class="form-label">Lebar Bingkai(cm)</label>
+              <input type="number" class="form-control" id="frameWidth" name="frameWidth" required>
+            </div>
+            <div class="mb-3">
+              <label for="frameHeight" class="form-label">Tinggi Bingkai(cm)</label>
+              <input type="number" class="form-control" id="frameHeight" name="frameHeight" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="frameColorFinish" class="form-label">Warna Bingkai</label>
+              <input type="text" class="form-control" id="frameColorFinish" name="frameColorFinish" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="glassAcrylicType" class="form-label">Tipe Kaca/Akrilik</label>
+              <select class="form-select" id="glassAcrylicType" name="glassAcrylicType" required>
+                <option value="glass" selected disabled>Pilih tipe kaca</option>
+                <option value="glass">Kaca Biasa</option>
+                <option value="acrylic">Kaca Anti-Glare</option>
+                <option value="acrylic">Akrilik</option>
+                <option value="acrylic">Kaca UV Protection</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="deliveryAddress" class="form-label">Alamat Kirim</label>
+              <input type="text" class="form-control" id="deliveryAddress" name="deliveryAddress" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="contactName" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="contactName" name="contactName" required>
+            </div>
+            <div class="mb-3">
+              <label for="contactEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="contactPhone" class="form-label">No. Hp</label>
+              <input type="tel" class="form-control" id="contactPhone" name="contactPhone" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="specialInstructions" class="form-label">Instruksi Khusus(opsional)</label>
+              <textarea class="form-control" id="specialInstructions" name="specialInstructions" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary" id="pesanButton">Pesan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal custom frame -->
+
 
 
   <!-- footer -->
   <div style="height: 2px;background-color: #000000;"></div>
   <div class="bg-light">
-    <div class="container py-5" style="width: 70%;">
+    <div class="container-fluid py-5" style="width: 70%;">
       <span class="fs-3 fw-bold text-start">ChairdarFrame</span>
       <div class="row mt-4">
-        <div class="col-6">
+        <div class="col-md-6 order-md-1 order-2">
           <p class="text-uppercase fw-bold mb-4">Kontak kami</p>
           <p>ChairdarFrame@gmail.com</p>
           <p>0815-7508-9986</p>
           <p>DS Mejobo,kec Mejobo,kab Kudus, Jawa tengah</p>
 
-          <a href="https://instagram.com/chaidarframe_mejobokudus?igshid=MzRlODBiNWFlZA=="><img src="https://img.freepik.com/premium-vector/black-square-social-media-logo_197792-3367.jpg?size=626&ext=jpg&ga=GA1.1.90356030.1694061817&semt=ais" width="40px" style="margin-left: -1%;"></a>
-          
+          <a href="https://instagram.com/chaidarframe_mejobokudus?igshid=MzRlODBiNWFlZA=="><img
+              src="https://img.freepik.com/premium-vector/black-square-social-media-logo_197792-3367.jpg?size=626&ext=jpg&ga=GA1.1.90356030.1694061817&semt=ais"
+              width="40px" style="margin-left: -1%;"></a>
+
         </div>
-        <div class="col-6">
-          <p class="text-uppercase fw-bold mb-4">Produk</p>
+        <div class="col-md-6 order-md-2 order-1">
+          <p class="text-uppercase fw-bold mb-4">Produk<p>
           <p><a href="#" class="text-dark text-decoration-none">Frames</a></p>
           <p><a href="#" class="text-dark text-decoration-none">Arts Prints</a></p>
           <p><a href="#" class="text-dark text-decoration-none">Custom Frame</a></p>
+
         </div>
       </div>
     </div>
   </div>
-  <div style="height: 2px;background-color: #F5F5F5;"></div>
-  <footer>
-    <div class="bg-light text-secondary p-3 text-end me-5 pe-5">
+  <div style="height: 2px;background-color: #878E9D;"></div>
+  <footer class="container-fluid">
+    <div class="bg-light text-secondary p-3 text-md-end text-center me-md-5 pe-md-5">
       <p class="mb-0">Copyright © 2023. Seluruh hak cipta.</p>
     </div>
   </footer>
+  <!-- end footer -->
 
 
 
@@ -236,6 +377,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/loadpage.js"></script>
+
 
     <script>
       // Fungsi untuk menampilkan atau menyembunyikan art prints berdasarkan artis yang dipilih
@@ -271,6 +416,64 @@
       document.getElementById('filterCarlaSinowato').addEventListener('change', filterArtis);
       document.getElementById('filterMelinnieAngela').addEventListener('change', filterArtis);
       document.getElementById('filterWatchunting').addEventListener('change', filterArtis);
+
+      $(document).ready(function () {
+      const pesanButton = $("#FrameModal button.btn-primary");
+
+      pesanButton.on("click", function () {
+        const frameType = $("#frameType").val();
+        const frameWidth = $("#frameWidth").val();
+        const frameHeight = $("#frameHeight").val();
+        const frameColorFinish = $("#frameColorFinish").val();
+        const glassAcrylicType = $("#glassAcrylicType").val();
+        const deliveryAddress = $("#deliveryAddress").val();
+        const contactName = $("#contactName").val();
+        const contactEmail = $("#contactEmail").val();
+        const contactPhone = $("#contactPhone").val();
+        const specialInstructions = $("#specialInstructions").val();
+
+
+        if (
+          !frameType || !frameWidth || !frameHeight || !frameColorFinish ||
+          !glassAcrylicType || !deliveryAddress || !contactName ||
+          !contactEmail || !contactPhone
+        ) {
+
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Mohon lengkapi semua field yang diperlukan.',
+          });
+        } else {
+
+          const alertMessage = `
+                    <div style="text-align: left;">
+                        <p><strong>Frame Type:</strong> ${frameType}</p>
+                        <p><strong>Frame Width:</strong> ${frameWidth} cm</p>
+                        <p><strong>Frame Height:</strong> ${frameHeight} cm</p>
+                        <p><strong>Frame Color/Finish:</strong> ${frameColorFinish}</p>
+                        <p><strong>Glass/Acrylic Type:</strong> ${glassAcrylicType}</p>
+                        <p><strong>Delivery Address:</strong> ${deliveryAddress}</p>
+                        <p><strong>Contact Name:</strong> ${contactName}</p>
+                        <p><strong>Contact Email:</strong> ${contactEmail}</p>
+                        <p><strong>Contact Phone:</strong> ${contactPhone}</p>
+                        <p><strong>Special Instructions:</strong> ${specialInstructions}</p>
+                    </div>
+                `;
+
+
+          Swal.fire({
+            icon: 'success',
+            title: 'Pesanan berhasil!',
+            html: alertMessage,
+          }).then(function () {
+            // Tutup modal dengan jQuery
+            $("#FrameModal").modal("hide");
+          });
+
+        }
+      });
+    });
     </script>
     
 

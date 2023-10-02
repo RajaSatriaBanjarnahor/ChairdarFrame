@@ -1,19 +1,4 @@
-.nav-item{
-    margin: 0 auto ;
-  }
-
-  .nav-pills .nav-link {
-      color: #878E9D; /* Use the color code or name for dark text */
-  }
-
-  .corners{
-      border-radius: 90px;
-      background: #E6E8EC;
-      padding: 8px 10px;
-      width: 200px;   
-  }
-
-  h2, h6 {
+h2, h6 {
     padding: 20px;
   }
 
@@ -21,7 +6,7 @@
     margin-left: 20px;
   }
 
-  .container {
+  .designService {
     padding: 50px;
   }
 
@@ -31,14 +16,14 @@
   }
 
   .col {
-    height: 700px;
+    height: 550px;
     margin-bottom: 50px;
   }
 
   .btn {
-    margin: 30px;
-      
+    margin: 30px 5px;
   }
+
 
   .card:hover {
     transform: scale(1.05); /* Memperbesar kartu saat dihover */
