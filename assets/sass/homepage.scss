@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+  }
+  
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .sectionView {
+      padding: 5vh 0;
+    }
+  
+    .imgWidth {
+      width: 90%;
+    }
+  
+    div.card.customWU {
+      height: 45vh;
+    }
+  }
+  
+  @media only screen and (min-width: 321px) {
+    .sectionView {
+      padding: 5vh 0;
+    }
+  
+    .imgWidth {
+      width: 90%;
+    }
+  
+    div.card.customWU {
+      height: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 601px) {
+    .sectionView {
+      padding: 5vh 0;
+    }
+  
+    .imgWidth {
+      width: 75%;
+    }
+  
+    div.card.customCarousel {
+      height: 350px;
+    }
+  
+    div.card.customWU {
+      height: 250px;
+    }
+  
+    .negmar {
+      margin-top: -50px;
+    }
+  }
+  
+  @media only screen and (min-width: 1001px) {
+    .sectionView {
+      padding: 10vh 0;
+    }
+  
+    .imgWidth {
+      width: 70%;
+    }
+  
+    div.card.customCarousel {
+      height: 400px;
+    }
+  
+    div.card.customWU {
+      height: 210px;
+    }
+  
+    .kolomview {
+      margin: 5%;
+      width: 40%;
+      padding-left: 5%;
+    }
+  
+    .negmar {
+      margin-top: -50px;
+    }
+  }
+
+  @media only screen and (min-width: 1251px) {
+    div.card.customWU {
+      height: 250px;
+    }
+  }
+
+  @media only screen and (min-width: 1601px) {
+    div.card.customWU {
+      height: 290px;
+    }
+  }
+  
+  div.card.customWU:hover {
+    height: 100%;
+  }
+  
+  .custom-card .card-text {
+    display: none;
+  }
+  
+  .custom-card:hover .card-text {
+    display: block;
+  }
+  
+  .btn-rounded {
+    padding: 5px 25px;
+    border-radius: 50px !important;
+  }
+  
+  .custom-card {
+    transition: transform 0.2s;
+    cursor: pointer;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
