@@ -28,7 +28,7 @@
     <!-- Header -->
     <div class="container-fluid bg-light fw-bold align-items-center sticky-top">
       <header class="d-flex align-items-center flex-wrap justify-content-center py-lg-3 pt-sm-3 border-bottom">
-        <div class="col-lg-2 col-sm-12 col-9 d-flex justify-content-md-center">
+        <div class="col-lg-2 col-auto mx-md-0 mx-auto d-flex justify-content-md-center">
           <a href="Homepage.html" class="d-flex justify-content-center link-body-emphasis text-decoration-none corners">
             <span class="fs-5">ChairdarFrame</span>
           </a>
@@ -36,7 +36,7 @@
         <div class="col-2 text-center d-lg-block d-none">
           <div class="vr" style="height: 45px;width: 2px;background-color: #878E9D;"></div>
         </div>
-        <div class="d-flex d-md-none">
+        <div class="col-auto d-flex d-md-none">
           <nav class="navbar navbar-light bg-light">
             <div class="container">
               <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
@@ -72,17 +72,12 @@
     <!-- Homepage -->
     <div class="container-fluid sectionView" style="background-color: #CCCCCC;">
       <div class="container-fluid row mx-auto d-flex">
-        <div class="col-md-6 col-12 order-md-1 order-2 text-md-start text-center kolomview">
+        <div class="col-xl-6 col-12 order-lg-1 order-2 p-lg-0 p-md-5 p-0 text-lg-start text-center kolomview">
           <span class="fs-1 fw-bold">Abadikan Momen Berharga Anda!</span><br><br>
-          <p class="px-md-0 px-3 fs-md-6 fs-6">Dalam dunia yang terus bergerak cepat, kita seringkali terlalu sibuk
-            untuk
-            merenung dan menghargai
-            momen-momen berharga yang telah kita alami.Abadikan Momen Berharga Anda dengan bingkai foto kami yang akan
-            memberikan sentuhan khusus pada setiap potret, mengubahnya menjadi cerita visual yang selalu dapat Anda
-            nikmati dan bagikan kepada generasi mendatang.</p>
-          <a href="#pesanCustom"><button type="button" class="btn btn-rounded btn-dark mt-1">Pesan Disini</button></a>
+          <p class="px-md-0 px-3 fs-md-6 fs-6 text-md-start text-center">Dalam dunia yang terus bergerak cepat, kita seringkali terlalu sibuk untuk merenung dan menghargai momen-momen berharga yang telah kita alami.Abadikan Momen Berharga Anda dengan bingkai foto kami yang akan memberikan sentuhan khusus pada setiap potret, mengubahnya menjadi cerita visual yang selalu dapat Anda nikmati dan bagikan kepada generasi mendatang.</p>
+          <a href="#pesanCustom"><button type="button" class="btn btn-rounded btn-dark px-md-5 mt-1">Pesan Disini</button></a>
         </div>
-        <div class="col-md-6 col-12 order-md-2 order-1 m-auto text-center">
+        <div class="col-lg-6 col-12 order-lg-2 order-1 m-auto text-center">
           <img class="imgWidth" src="https://drive.google.com/uc?export=view&id=1GM3Z9fink1Dm2lIMcwCwksIzpuitKEq3"
             alt="">
         </div>
@@ -93,8 +88,8 @@
     <!-- Produk Popular -->
     <div class="container-fluid text-center pt-5">
       <span class="fs-3 lead">Produk Popular</span>
-      <section class="pt-1 pb-md-5">
-        <div class="container pb-md-5">
+      <section class="pt-1 pb-lg-5">
+        <div class="container pb-lg-5">
           <div class="row">
             <div class="col-12">
               <h3 class="mb-3 fs-2 text-center fw-bold">Bingkai Terbaik Kami</h3>
@@ -104,88 +99,97 @@
                 data-bs-slide="prev">
                 <i class="fa fa-arrow-left"></i>
               </a>
-              <a class="btn btn-outline-secondary rounded-circle mb-3 " href="#carouselSlider" role="button"
+              <a class="btn btn-outline-secondary rounded-circle mb-3" href="#carouselSlider" role="button"
                 data-bs-slide="next">
                 <i class="fa fa-arrow-right"></i>
               </a>
             </div>
-            <div class="col-12 ">
-              <div id="carouselSlider" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="col-auto">
+              <div id="carouselSlider" class="carousel slide" data-bs-ride="true">
+                <div class="d-md-none d-flex px-5">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
+                  <div class=" carousel-item active">
                     <div class="row">
                       <div class="col-md-4 mb-3">
-                        <div class="card">
+                        <div class="card customCarousel">
                           <img class="img-fluid"
                             src="https://drive.google.com/uc?export=view&id=1xzS9FcRz7Ctc5ZRoDeR2XAhM5dXfCi_4">
                           <div class="card-body text-start">
                             <div class="row fw-bold">
-                              <div class="col-md-7 col-12">
+                              <div class="col-lg-7 col-12">
                                 <h4 class="card-title">Gold Frame</h4>
                               </div>
-                              <div class="col-md-5 col-12">
-                                <div class="border border-dark rounded text-center  d-md-block d-none">
+                              <div class="col-lg-5 col-12">
+                                <div class="border border-dark rounded text-center  d-lg-block d-none">
                                   <span class="fs-6">Rp 749.000</span>
                                 </div>
-                                <div class="border-0 text-start d-md-none d-block">
+                                <div class="border-0 text-start d-lg-none d-block">
                                   <span class="fs-6">Rp 749.000</span>
                                 </div>
                               </div>
                             </div>
                             <p class="card-text">kemewahan ke setiap momen berharga.</p>
-                            <div class="text-center">
-                              <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
-                            </div>
                           </div>
-                        </div>
+                          <div class="text-center d-flex justify-content-center pb-3 border-0">
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end">Pesan Sekarang</button>
+                          </div>  
+                      </div>
                       </div>
                       <div class="col-md-4 mb-3">
-                        <div class="card">
+                        <div class="card customCarousel">
                           <img class="img-fluid"
                             src="https://drive.google.com/uc?export=view&id=1nd9AOtJsgdLVZ9VZ9uduYSCHdM4rIUHy">
                           <div class="card-body text-start">
                             <div class="row fw-bold">
-                              <div class="col-md-7 col-12">
+                              <div class="col-lg-7 col-12">
                                 <h4 class="card-title">Classic Black Frame</h4>
                               </div>
-                              <div class="col-md-5 col-12">
-                                <div class="border border-dark rounded text-center  d-md-block d-none">
+                              <div class="col-lg-5 col-12">
+                                <div class="border border-dark rounded text-center  d-lg-block d-none">
                                   <span class="fs-6">Rp 449.000</span>
                                 </div>
-                                <div class="border-0 text-start d-md-none d-block">
+                                <div class="border-0 text-start d-lg-none d-block">
                                   <span class="fs-6">Rp 449.000</span>
                                 </div>
                               </div>
                             </div>
                             <p class="card-text">Abadikan dengan sentuhan klasik.</p>
-                            <div class="text-center">
-                              <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
-                            </div>
+                          </div>
+                          <div class="text-center d-flex justify-content-center pb-3 border-0">
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end">Pesan Sekarang</button>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-4 mb-3">
-                        <div class="card">
+                        <div class="card customCarousel">
                           <img class="img-fluid"
                             src="https://drive.google.com/uc?export=view&id=1WdUR9-1V0f6zqPthi_2RdGQ-16xIlSe5">
                           <div class="card-body text-start">
                             <div class="row fw-bold">
-                              <div class="col-md-7 col-12">
+                              <div class="col-lg-7 col-12">
                                 <h4 class="card-title">Luxury White Frame</h4>
                               </div>
-                              <div class="col-md-5 col-12">
-                                <div class="border border-dark rounded text-center  d-md-block d-none">
+                              <div class="col-lg-5 col-12">
+                                <div class="border border-dark rounded text-center  d-lg-block d-none">
                                   <span class="fs-6">Rp 899.000</span>
                                 </div>
-                                <div class="border-0 text-start d-md-none d-block">
+                                <div class="border-0 text-start d-lg-none d-block">
                                   <span class="fs-6">Rp 899.000</span>
                                 </div>
                               </div>
                             </div>
                             <p class="card-text">keindahan putih yang mewah.</p>
-                            <div class="text-center">
-                              <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
-                            </div>
+                          </div>
+                          <div class="text-center d-flex justify-content-center pb-3 border-0">
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end">Pesan Sekarang</button>
                           </div>
                         </div>
                       </div>
@@ -194,82 +198,82 @@
                   <div class="carousel-item">
                     <div class="row">
                       <div class="col-md-4 mb-3">
-                        <div class="card">
+                        <div class="card customCarousel">
                           <img class="img-fluid"
                             src="https://drive.google.com/uc?export=view&id=1rbA79MrlfQXI6ILRTy_k_1Ts5vmLDGxm">
                           <div class="card-body text-start">
                             <div class="row fw-bold">
-                              <div class="col-md-7 col-12">
+                              <div class="col-lg-7 col-12">
                                 <h4 class="card-title">White Frame</h4>
                               </div>
-                              <div class="col-md-5 col-12">
-                                <div class="border border-dark rounded text-center  d-md-block d-none">
+                              <div class="col-lg-5 col-12">
+                                <div class="border border-dark rounded text-center d-lg-block d-none">
                                   <span class="fs-6">Rp 417.000</span>
                                 </div>
-                                <div class="border-0 text-start d-md-none d-block">
+                                <div class="border-0 text-start d-lg-none d-block">
                                   <span class="fs-6">Rp 417.000</span>
                                 </div>
                               </div>
                             </div>
                             <p class="card-text">berikan sentuhan kesederhanaan dan kecerahan.</p>
-                            <div class="text-center">
-                              <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
-                            </div>
+                          </div>
+                          <div class="text-center d-flex justify-content-center pb-3 border-0">
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end">Pesan Sekarang</button>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-4 mb-3">
-                        <div class="card">
+                        <div class="card customCarousel">
                           <img class="img-fluid"
                             src="https://drive.google.com/uc?export=view&id=12UovtjY7KUfwRXSc1DEFG98cBDtQZ8F5">
                           <div class="card-body text-start">
                             <div class="row fw-bold">
-                              <div class="col-md-7 col-12">
+                              <div class="col-lg-7 col-12">
                                 <h4 class="card-title">Black Frame</h4>
                               </div>
-                              <div class="col-md-5 col-12">
-                                <div class="border border-dark rounded text-center  d-md-block d-none">
+                              <div class="col-lg-5 col-12">
+                                <div class="border border-dark rounded text-center  d-lg-block d-none">
                                   <span class="fs-6">Rp 417.000</span>
                                 </div>
-                                <div class="border-0 text-start d-md-none d-block"><span class="fs-6">Rp 417.000</span>
+                                <div class="border-0 text-start d-lg-none d-block"><span class="fs-6">Rp 417.000</span>
                                 </div>
                               </div>
                             </div>
                             <p class="card-text">tampilan lebih tajam dan terdefinisi dengan indah.</p>
-                            <div class="text-center">
-                              <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
-                            </div>
+                          </div>
+                          <div class="text-center d-flex justify-content-center pb-3 border-0">
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end">Pesan Sekarang</button>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-4 mb-3">
-                        <div class="card">
+                        <div class="card customCarousel">
                           <img class="img-fluid"
                             src="https://drive.google.com/uc?export=view&id=1UpM183Hh29GLd00cNUT-XD7r7HlAIFLe">
                           <div class="card-body text-start">
                             <div class="row fw-bold">
-                              <div class="col-md-7 col-12">
+                              <div class="col-lg-7 col-12">
                                 <h4 class="card-title">Wood Frame</h4>
                               </div>
-                              <div class="col-md-5 col-12">
-                                <div class="border border-dark rounded text-center  d-md-block d-none">
+                              <div class="col-lg-5 col-12">
+                                <div class="border border-dark rounded text-center  d-lg-block d-none">
                                   <span class="fs-6">Rp 417.000</span>
                                 </div>
-                                <div class="border-0 text-start d-md-none d-block">
+                                <div class="border-0 text-start d-lg-none d-block">
                                   <span class="fs-6">Rp 417.000</span>
                                 </div>
                               </div>
                             </div>
                             <p class="card-text">tampilan dengan nuansa alami dan kehangatan.</p>
-                            <div class="text-center">
-                              <button type="button" class="btn btn-dark btn-rounded">Pesan Sekarang</button>
-                            </div>
+                          </div>
+                          <div class="text-center d-flex justify-content-center pb-3 border-0">
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end">Pesan Sekarang</button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
+                  
                 </div>
               </div>
             </div>
@@ -282,9 +286,9 @@
     <!-- why us -->
     <div class="container-fluid my-5 pt-5">
       <h2 class="text-center mb-5">Apa yang membuat merek kami berbeda</h2>
-      <div class="row row-cols-1 row-cols-md-4 g-4 mx-auto" style="width: 80%;">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mx-auto" style="width: 80%;">
         <div class="col">
-          <div class="card custom-card text-center">
+          <div class="card customWU custom-card text-center">
             <img src="https://cdn-icons-png.flaticon.com/512/1077/1077299.png?ga=GA1.1.90356030.1694061817"
               class="card-img-top mx-auto d-block p-4" style="width: 60%;" alt="Pengiriman Cepat">
             <div class="card-body">
@@ -295,7 +299,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card custom-card text-center">
+          <div class="card customWU custom-card text-center">
             <img src="https://cdn-icons-png.flaticon.com/512/61/61222.png?ga=GA1.1.90356030.1694061817"
               class="card-img-top mx-auto d-block p-4" style="width: 60%;" alt="Dibuat oleh pengrajin sejati">
             <div class="card-body">
@@ -305,26 +309,22 @@
           </div>
         </div>
         <div class="col">
-          <div class="card custom-card text-center">
+          <div class="card customWU custom-card text-center">
             <img src="https://cdn-icons-png.flaticon.com/512/3354/3354358.png?ga=GA1.1.90356030.1694061817"
               class="card-img-top mx-auto d-block p-4" style="width: 60%;" alt="Harga Terbaik">
             <div class="card-body">
               <h5 class="card-title">Harga Terbaik</h5>
-              <p class="card-text">Untuk bahan dan kualitas kami, Anda tidak akan menemukan harga yang lebih baik di
-                mana
-                pun.</p>
+              <p class="card-text">Untuk bahan dan kualitas kami, Anda tidak akan menemukan harga yang lebih baik di mana pun.</p>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card custom-card text-center">
+          <div class="card customWU custom-card text-center">
             <img src="https://cdn-icons-png.flaticon.com/512/2708/2708251.png?ga=GA1.1.90356030.1694061817"
               class="card-img-top mx-auto d-block p-4" style="width: 60%;" alt="Kemasan daur ulang">
             <div class="card-body">
               <h5 class="card-title">Kemasan daur ulang</h5>
-              <p class="card-text">Kami bangga menggunakan kemasan daur ulang untuk mendukung lingkungan yang lebih
-                bersih
-                dan hijau.</p>
+              <p class="card-text">Kami bangga menggunakan kemasan daur ulang untuk mendukung lingkungan yang lebih bersihdan hijau.</p>
             </div>
           </div>
         </div>
@@ -476,7 +476,7 @@
     </div>
     <div style="height: 2px;background-color: #878E9D;"></div>
     <footer class="container-fluid">
-      <div class="bg-light text-secondary p-3 text-md-end text-center me-md-5 pe-md-5">
+      <div class="bg-light text-secondary p-3 text-center">
         <p class="mb-0">Copyright © 2023. Seluruh hak cipta.</p>
       </div>
     </footer>
