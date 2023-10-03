@@ -1,34 +1,49 @@
 h2, h6 {
+  margin-left: 20px;
     padding: 20px;
   }
 
+  .input-group {
+    margin: 20px;
+  }
+
   .form-check {
-    margin-left: 20px;
+    margin-left: 40px;
   }
 
   .designService {
     padding: 50px;
   }
 
-  .row .col {
-    padding: 50px;
-    
+  .card-img-top {
+    padding: 20px;
+    max-width: 100%; 
+    height: auto; 
+    text-align: center;
   }
 
-  .col {
-    height: 550px;
-    margin-bottom: 50px;
+  .container .col {
+    height: 90%;
+  }
+
+ .button {
+  margin-top: 20px;
+ }
+
+  .row .col {
+    padding: 0 0 80px;
+    margin: 10px;
   }
 
   .btn {
-    margin: 30px 5px;
+    margin: 10px 1px;
   }
 
 
   .card:hover {
-    transform: scale(1.05); /* Memperbesar kartu saat dihover */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Efek bayangan saat dihover */
-    transition: transform 0.3s, box-shadow 0.3s; /* Animasi perubahan saat dihover */
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
   }
   
   .btn:hover {
