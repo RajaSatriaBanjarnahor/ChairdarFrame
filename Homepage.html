@@ -139,7 +139,8 @@
                             <p class="card-text">kemewahan ke setiap momen berharga.</p>
                           </div>
                           <div class="text-center d-flex justify-content-center pb-3 border-0">
-                            <button type="button" class="btn btn-dark btn-rounded align-self-end">Pesan Sekarang</button>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                            data-bs-target="#buyFrameModal">Pesan Sekarang</button>
                           </div>  
                       </div>
                       </div>
@@ -164,7 +165,8 @@
                             <p class="card-text">Abadikan dengan sentuhan klasik.</p>
                           </div>
                           <div class="text-center d-flex justify-content-center pb-3 border-0">
-                            <button type="button" class="btn btn-dark btn-rounded align-self-end">Pesan Sekarang</button>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                            data-bs-target="#buyFrameModal">Pesan Sekarang</button>
                           </div>
                         </div>
                       </div>
@@ -189,7 +191,8 @@
                             <p class="card-text">keindahan putih yang mewah.</p>
                           </div>
                           <div class="text-center d-flex justify-content-center pb-3 border-0">
-                            <button type="button" class="btn btn-dark btn-rounded align-self-end">Pesan Sekarang</button>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                            data-bs-target="#buyFrameModal">Pesan Sekarang</button>
                           </div>
                         </div>
                       </div>
@@ -218,7 +221,8 @@
                             <p class="card-text">berikan sentuhan kesederhanaan dan kecerahan.</p>
                           </div>
                           <div class="text-center d-flex justify-content-center pb-3 border-0">
-                            <button type="button" class="btn btn-dark btn-rounded align-self-end">Pesan Sekarang</button>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                            data-bs-target="#buyFrameModal">Pesan Sekarang</button>
                           </div>
                         </div>
                       </div>
@@ -242,7 +246,8 @@
                             <p class="card-text">tampilan lebih tajam dan terdefinisi dengan indah.</p>
                           </div>
                           <div class="text-center d-flex justify-content-center pb-3 border-0">
-                            <button type="button" class="btn btn-dark btn-rounded align-self-end">Pesan Sekarang</button>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                            data-bs-target="#buyFrameModal">Pesan Sekarang</button>
                           </div>
                         </div>
                       </div>
@@ -267,7 +272,8 @@
                             <p class="card-text">tampilan dengan nuansa alami dan kehangatan.</p>
                           </div>
                           <div class="text-center d-flex justify-content-center pb-3 border-0">
-                            <button type="button" class="btn btn-dark btn-rounded align-self-end">Pesan Sekarang</button>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                            data-bs-target="#buyFrameModal">Pesan Sekarang</button>
                           </div>
                         </div>
                       </div>
@@ -281,11 +287,83 @@
         </div>
       </section>
     </div>
+
+    <!-- modal buy frame -->
+    <div class="modal fade" id="buyFrameModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Frame Figure</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+
+              <div class="mb-3">
+                <label for="frameWidth" class="form-label">Lebar Bingkai(cm)</label>
+                <input type="number" class="form-control" id="frameWidth" name="frameWidth" required>
+              </div>
+              <div class="mb-3">
+                <label for="frameHeight" class="form-label">Tinggi Bingkai(cm)</label>
+                <input type="number" class="form-control" id="frameHeight" name="frameHeight" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="glassAcrylicType" class="form-label">Tipe Kaca/Akrilik</label>
+                <select class="form-select" id="glassAcrylicType" name="glassAcrylicType" required>
+                  <option value="glass" selected disabled>Pilih tipe kaca</option>
+                  <option value="glass">Kaca Biasa</option>
+                  <option value="acrylic">Kaca Anti-Glare</option>
+                  <option value="acrylic">Akrilik</option>
+                  <option value="acrylic">Kaca UV Protection</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="customImage" class="form-label">Unggah Gambar(opsional)</label><br>
+                <input type="file" class="form-control" id="customImage" name="customImage" style="display: none;">
+                <label for="customImage"
+                  style="padding: 10px 20px; cursor: pointer; background-color: #007bff; color: #fff; border: none; border-radius: 5px;">Pilih
+                  Foto</label>
+              </div>
+
+              <div class="mb-3">
+                <label for="deliveryAddress" class="form-label">Alamat Kirim</label>
+                <input type="text" class="form-control" id="deliveryAddress" name="deliveryAddress" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="contactName" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="contactName" name="contactName" required>
+              </div>
+              <div class="mb-3">
+                <label for="contactEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+              </div>
+              <div class="mb-3">
+                <label for="contactPhone" class="form-label">No. Hp</label>
+                <input type="tel" class="form-control" id="contactPhone" name="contactPhone" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="specialInstructions" class="form-label">Instruksi Khusus(opsional)</label>
+                <textarea class="form-control" id="specialInstructions" name="specialInstructions" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            <button type="button" class="btn btn-primary" id="pesanButton">Pesan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal buy frame -->
     <!-- end Produk Popular -->
 
     <!-- why us -->
     <div class="container-fluid my-5 pt-5">
-      <h2 class="text-center mb-5">Apa yang membuat merek kami berbeda</h2>
+      <h2 class="text-center mb-5 custom-font">Apa yang membuat merek kami berbeda</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mx-auto" style="width: 80%;">
         <div class="col">
           <div class="card customWU custom-card text-center">
