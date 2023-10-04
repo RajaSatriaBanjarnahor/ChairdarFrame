@@ -15,23 +15,29 @@ h2, h6 {
     padding: 50px;
   }
 
+  
+
   .card-img-top {
     padding: 20px;
-    max-width: 100%; 
-    height: auto; 
-    text-align: center;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
   }
 
   .container .col {
-    height: 90%;
+    height: 85%;
   }
 
  .button {
+  display: flex;
   margin-top: 20px;
+  justify-content: center;
  }
 
   .row .col {
-    padding: 0 0 80px;
+    padding: 0 0 100px;
     margin: 10px;
   }
 
