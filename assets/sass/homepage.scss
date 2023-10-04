@@ -1,3 +1,7 @@
+$height-countainer: 90%;
+$width-container: 90%;
+
+
 * {
     margin: 0;
   }
@@ -6,13 +10,15 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
+  
+
   @media only screen and (max-width: 320px) {
     .sectionView {
       padding: 5vh 0;
     }
   
     .imgWidth {
-      width: 90%;
+      width: $width-container; 
     }
   
     div.card.customWU {
@@ -26,11 +32,11 @@
     }
   
     .imgWidth {
-      width: 90%;
+      width: $width-container;
     }
   
     div.card.customWU {
-      height: 100%;
+      height: $height-countainer;
     }
   }
   
@@ -97,7 +103,8 @@
   }
   
   div.card.customWU:hover {
-    height: 100%;
+    $height-countainer: 100% !global;
+    height: $height-countainer;
   }
   
   .custom-card .card-text {
