@@ -1,131 +1,153 @@
-$height-countainer: 90%;
-$width-container: 90%;
+$first-height: 90%;
+$first-width: 90%;
+$font-size: 1em;
+$line-height: 1;
+
+
+@function set-font($fs, $lh) {
+  @return (
+    font-size: $fs,
+    line-height: $lh,
+  );
+}
+
+@mixin hover {
+  &:hover {
+    transform: scale(1.05);
+  }
+}
 
 
 * {
-    margin: 0;
-  }
-  
-  body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  
-  
+  margin: 0;
+}
 
-  @media only screen and (max-width: 320px) {
-    .sectionView {
-      padding: 5vh 0;
-    }
-  
-    .imgWidth {
-      width: $width-container; 
-    }
-  
-    div.card.customWU {
-      height: 45vh;
-    }
-  }
-  
-  @media only screen and (min-width: 321px) {
-    .sectionView {
-      padding: 5vh 0;
-    }
-  
-    .imgWidth {
-      width: $width-container;
-    }
-  
-    div.card.customWU {
-      height: $height-countainer;
-    }
-  }
-  
-  @media only screen and (min-width: 601px) {
-    .sectionView {
-      padding: 5vh 0;
-    }
-  
-    .imgWidth {
-      width: 75%;
-    }
-  
-    div.card.customCarousel {
-      height: 350px;
-    }
-  
-    div.card.customWU {
-      height: 250px;
-    }
-  
-    .negmar {
-      margin-top: -50px;
-    }
-  }
-  
-  @media only screen and (min-width: 1001px) {
-    .sectionView {
-      padding: 10vh 0;
-    }
-  
-    .imgWidth {
-      width: 70%;
-    }
-  
-    div.card.customCarousel {
-      height: 400px;
-    }
-  
-    div.card.customWU {
-      height: 210px;
-    }
-  
-    .kolomview {
-      margin: 5%;
-      width: 40%;
-      padding-left: 5%;
-    }
-  
-    .negmar {
-      margin-top: -50px;
-    }
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+@media only screen and (max-width: 320px) {
+  .sectionView {
+    padding: 5vh 0;
   }
 
-  @media only screen and (min-width: 1251px) {
-    div.card.customWU {
-      height: 250px;
-    }
+  .imgWidth {
+    width: $first-width;
   }
 
-  @media only screen and (min-width: 1601px) {
-    div.card.customWU {
-      height: 290px;
-    }
+  div.card.customWU {
+    height: 45vh;
   }
-  
-  div.card.customWU:hover {
-    $height-countainer: 100% !global;
-    height: $height-countainer;
+}
+
+@media only screen and (min-width: 321px) {
+  .sectionView {
+    padding: 5vh 0;
   }
-  
-  .custom-card .card-text {
-    display: none;
+
+  .imgWidth {
+    width: $first-width;
   }
-  
-  .custom-card:hover .card-text {
-    display: block;
+
+  div.card.customWU {
+    height: $first-height;
   }
-  
-  .btn-rounded {
-    padding: 5px 25px;
-    border-radius: 50px !important;
+}
+
+@media only screen and (min-width: 601px) {
+  .sectionView {
+    padding: 5vh 0;
   }
-  
-  .custom-card {
-    transition: transform 0.2s;
-    cursor: pointer;
-  
-    &:hover {
-      transform: scale(1.05);
-    }
+
+  .imgWidth {
+    width: 75%;
   }
+
+  div.card.customCarousel {
+    height: 350px;
+  }
+
+  div.card.customWU {
+    height: 250px;
+  }
+
+  .negmar {
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  .sectionView {
+    padding: 10vh 0;
+  }
+
+  .imgWidth {
+    width: 70%;
+  }
+
+  div.card.customCarousel {
+    height: 400px;
+  }
+
+  div.card.customWU {
+    height: 210px;
+  }
+
+  .kolomview {
+    margin: 5%;
+    width: 40%;
+    padding-left: 5%;
+  }
+
+  .negmar {
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (min-width: 1251px) {
+  div.card.customWU {
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 1601px) {
+  div.card.customWU {
+    height: 290px;
+  }
+}
+
+.custom-font {
+  $font-attributes: set-font(32px, 1.5);
   
+  font-size: map-get($font-attributes, font-size);
+  line-height: map-get($font-attributes, line-height);
+  
+  font-weight: bold;
+  color: #333;
+}
+
+div.card.customWU:hover {
+  $first-height: 100% !global;
+  height: $first-height;
+}
+
+.custom-card .card-text {
+  display: none;
+}
+
+.custom-card:hover .card-text {
+  display: block;
+}
+
+.btn-rounded {
+  padding: 5px 25px;
+  border-radius: 50px !important;
+}
+
+.custom-card {
+  transition: transform 0.2s;
+  cursor: pointer;
+  @include hover;
+}

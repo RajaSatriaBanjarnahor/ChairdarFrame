@@ -77,6 +77,13 @@ body {
     height: 290px;
   }
 }
+.custom-font {
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #333;
+}
+
 div.card.customWU:hover {
   height: 100%;
 }
