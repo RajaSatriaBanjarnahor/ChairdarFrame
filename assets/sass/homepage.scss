@@ -1,15 +1,6 @@
-$first-height: 90%;
-$first-width: 90%;
-$font-size: 1em;
-$line-height: 1;
+@use "setting";
+@import "custom-font";
 
-
-@function set-font($fs, $lh) {
-  @return (
-    font-size: $fs,
-    line-height: $lh,
-  );
-}
 
 @mixin hover {
   &:hover {
@@ -34,7 +25,7 @@ body {
   }
 
   .imgWidth {
-    width: $first-width;
+    width: setting.$size2;
   }
 
   div.card.customWU {
@@ -48,11 +39,11 @@ body {
   }
 
   .imgWidth {
-    width: $first-width;
+    width: setting.$size2;
   }
 
   div.card.customWU {
-    height: $first-height;
+    height: setting.$size2;
   }
 }
 
@@ -129,8 +120,7 @@ body {
 }
 
 div.card.customWU:hover {
-  $first-height: 100% !global;
-  height: $first-height;
+  height: setting.$size1;
 }
 
 .custom-card .card-text {

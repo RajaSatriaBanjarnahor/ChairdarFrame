@@ -1,0 +1,16 @@
+@function set-font($fs, $lh) {
+    @return (
+      font-size: $fs,
+      line-height: $lh,
+    );
+  }
+  
+.custom-font {
+    $font-attributes: set-font(32px, 1.5);
+    
+    font-size: map-get($font-attributes, font-size);
+    line-height: map-get($font-attributes, line-height);
+    
+    font-weight: bold;
+    color: #333;
+  }
