@@ -2,21 +2,9 @@ body {
     font-family: Arial, sans-serif;
  }
 
-   .container {
-    max-width: 600px; /* Sesuaikan dengan lebar yang Anda inginkan */
-    margin: 0 auto;
- }
-
    .read-more-section {
     margin-bottom: 20px;
     text-align: center;
- }
-
-   .img-fluid {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    display: block;
  }
    
    .text {
@@ -49,7 +37,7 @@ body {
  }
 
  .card text{
-   font-size: medium;
+   font-size: large;
    letter-spacing: normal;
    line-height: normal;  
  }
