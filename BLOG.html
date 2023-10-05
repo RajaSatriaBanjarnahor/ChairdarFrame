@@ -71,18 +71,14 @@
     <div class="container-fluid" style="background-color: #f5f6f6;">
       <h2>BLOG</h2>
     </div>
-      <hr>
-      <nav class="navbar bg-body-tertiary">
-        <form class="container-fluid">
+    <nav class="navbar bg-body-tertiary">
+      <form class="container-fluid" id="searchForm">
           <div class="input-group">
-            <input type="search" class="form-control" placeholder="Search" aria-label="Search"
-              aria-describedby="basic-addon1">
-            <span class="input-group-text" id="basic-addon1">
-              <i class="fas fa-search"></i>
-            </span>
+              <input type="search" class="form-control" id="searchInput" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+              <button class="search-button" onclick="searchblog()">Cari</button>
           </div>
-        </form>
-      </nav>
+      </form>
+  </nav>
 
       <center>
         <div class="designService">
@@ -233,6 +229,23 @@
         }
     });
 });
+   
+document.getElementById('searchForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get the search query from the input field
+    const searchQuery = document.getElementById('searchInput').value;
+
+    // Perform a mock search (replace this with your actual search logic)
+    performSearch(searchQuery);
+});
+
+function performSearch(query) {
+    // For simplicity, let's just display the search query as the result
+    const searchResultsContainer = document.getElementById('searchResults');
+    searchResultsContainer.innerHTML = `<p>Search results for: <strong>${query}</strong></p>`;
+}
+
 
   </script>
 

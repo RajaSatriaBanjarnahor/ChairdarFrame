@@ -18,6 +18,18 @@ body {
    .additional-text {
     display: none;
  }
+ .navbar {
+  padding: 10px;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+}
+
+.form-control {
+  flex: 1;
+}
 
   .bg-responsive{
    background-image: url($url);
