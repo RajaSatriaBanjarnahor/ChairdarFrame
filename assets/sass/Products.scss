@@ -1,11 +1,18 @@
-// Variables
-$primary-color: #3b3b3b;
+@function calculate-border-radius($radius) {
+  @return $radius * 4;
+}
+
+@function calculate-padding($padding) {
+  @return $padding * 2;
+}
+
+$primary-color: #333;
 $secondary-color: #555;
-$border-color: #ddd;
-$box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 $background-color: #e6e6e6;
-$button-background: #333;
-$button-hover-background: #555;
+$text-color: #3b3b3b;
+$light-text-color: #878E9D;
+$border-color: #ddd;
+$hover-shadow: 5px rgba(0, 0, 0, 0.2);
 
 body {
   font-family: Arial, sans-serif;
@@ -13,66 +20,59 @@ body {
 
 a {
   text-decoration: none;
-  color: $primary-color;
+  color: $text-color;
 }
 
 .section {
   background-color: $background-color;
   margin-top: 0px;
-  padding: 20px;
+  padding: calculate-padding(10px);
   border: 1px solid $border-color;
-  border-radius: 5px;
+  border-radius: calculate-border-radius(5px);
 }
 
-// Main styles
 .nav-item {
   margin: 0 auto;
 }
 
-.nav-pills {
-  .nav-link {
-    color: #878E9D;
-  }
+.nav-pills .nav-link {
+  color: $light-text-color;
 }
 
 .corners {
-  border-radius: 90px;
+  border-radius: calculate-border-radius(90px);
   background: #E6E8EC;
-  padding: 8px 10px;
+  padding: calculate-padding(4px) calculate-padding(5px);
   width: 200px;
 }
 
 .search-bar {
-  margin-top: 20px;
-
+  margin-top: calculate-padding(10px);
   .search-input {
-    padding: 10px;
+    padding: calculate-padding(5px);
     width: 93%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid $border-color;
+    border-radius: calculate-border-radius(5px);
   }
-
   .search-button {
-    padding: 10px 20px;
-    background-color: $button-background;
+    padding: calculate-padding(5px) calculate-padding(10px);
+    background-color: $primary-color;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: calculate-border-radius(5px);
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
-
     &:hover {
-      background-color: $button-hover-background;
+      background-color: $secondary-color;
     }
   }
 }
 
 .category-checkboxes {
-  margin-top: 20px;
-
+  margin-top: calculate-padding(10px);
   label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: calculate-padding(5px);
   }
 }
 
@@ -80,51 +80,44 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   .product-item {
     background-color: #fff;
     border: 1px solid $border-color;
-    padding: 20px;
+    padding: calculate-padding(10px);
     width: 250px;
     text-align: center;
-    box-shadow: $box-shadow;
+    box-shadow: 0px 0px $hover-shadow;
     transition: transform 0.2s ease-in-out;
-    margin: 50px 20px 0;
-    border-radius: 5px;
-
+    margin: calculate-padding(25px) calculate-padding(5px) 0;
+    border-radius: calculate-border-radius(5px);
     &:hover {
       transform: scale(1.05);
     }
-
     img {
       max-width: 100%;
       height: auto;
-      border-radius: 5px;
+      border-radius: calculate-border-radius(5px);
     }
-
     h2 {
       font-size: 1.3rem;
-      margin: 10px 0;
+      margin: calculate-padding(5px) 0;
       color: $secondary-color;
     }
-
     p {
       font-size: 1.1rem;
       color: #888;
     }
-
     button {
-      margin-top: 10px;
-      background-color: $button-background;
+      margin-top: calculate-padding(5px);
+      background-color: $primary-color;
       color: #fff;
       border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
+      padding: calculate-padding(5px) calculate-padding(10px);
+      border-radius: calculate-border-radius(5px);
       cursor: pointer;
       transition: background-color 0.2s ease-in-out;
-
       &:hover {
-        background-color: $button-hover-background;
+        background-color: $secondary-color;
       }
     }
   }
