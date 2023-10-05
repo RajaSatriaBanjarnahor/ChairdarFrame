@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frames</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/frames.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/loadpage.css">
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <!--end preloader -->
+
+    <!-- Content -->
+    <div class="content">
+
+        <!-- Header -->
+        <div class="container-fluid bg-light fw-bold align-items-center sticky-top">
+            <header class="d-flex align-items-center flex-wrap justify-content-center py-lg-3 pt-sm-3 border-bottom">
+                <div class="col-lg-2 col-auto mx-md-0 mx-auto d-flex justify-content-md-center">
+                    <a href="Homepage.html"
+                        class="d-flex justify-content-center link-body-emphasis text-decoration-none corners">
+                        <span class="fs-5">ChairdarFrame</span>
+                    </a>
+                </div>
+                <div class="col-2 text-center d-lg-block d-none">
+                    <div class="vr" style="height: 45px;width: 2px;background-color: #878E9D;"></div>
+                </div>
+                <div class="col-auto d-flex d-md-none">
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container">
+                            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarToggleExternalContent3"
+                                aria-controls="navbarToggleExternalContent3" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <i class="fa fa-2x fa-bars"></i>
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="collapse" id="navbarToggleExternalContent3">
+                    <div class="bg-light">
+                        <ul class="nav nav-pills col-12 d-grid text-start">
+                            <li class="nav-item"><a href="frames.html" class="nav-link" aria-current="page">FRAMES</a>
+                            </li>
+                            <li class="nav-item"><a href="artprints.html" class="nav-link">ARTS PRINTS</a></li>
+                            <li class="nav-item"><a href="Products.html" class="nav-link">PRODUCTS</a></li>
+                            <li class="nav-item"><a href="BLOG.html" class="nav-link">BLOG</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="d-none d-md-flex nav nav-pills col-lg-6 col-md-12 text-md-center text-start">
+                    <li class="nav-item"><a href="frames.html" class="nav-link" aria-current="page">FRAMES</a></li>
+                    <li class="nav-item"><a href="artprints.html" class="nav-link">ARTS PRINTS</a></li>
+                    <li class="nav-item"><a href="Products.html" class="nav-link">PRODUCTS</a></li>
+                    <li class="nav-item"><a href="BLOG.html" class="nav-link">BLOG</a></li>
+                </ul>
+
+            </header>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Centered Hero -->
+            <div class="container text-center my-5">
+                <h1>Frames</h1>
+                <p>Bingkai kami adalah cara sempurna untuk abadikan momen<br> berharga Anda dalam keindahan.</p>
+            </div>
+        </div>
+        <!-- end Content -->
+
+        <!-- end Header -->
+        <!-- <div style="height: 100vh;background-color: #CCCCCC;"></div> -->
+
+        <div class="container mt-5">
+            <ul class="nav nav-tabs nav-fill justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab"
+                        aria-controls="tab1" aria-selected="true">popular</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
+                        aria-selected="false">Frame kecil</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="tab3-tab" data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="tab3"
+                        aria-selected="false">frame sedang</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="tab4-tab" data-bs-toggle="tab" href="#tab4" role="tab" aria-controls="tab4"
+                        aria-selected="false">frame besar</a>
+                </li>
+            </ul>
+            <div class="tab-content pt-5" id="myTabContent">
+                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                    <div class="product-list">
+                        <div class="product-item">
+                            <h2>Athena Black</h2>
+                            <img src="assets/gambar/foto1.jpg" alt="Pet Poster">
+                            <span class="fs-6">Rp 614.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+
+                        <div class="product-item">
+                            <h2>Athena Gold</h2>
+                            <img src="assets/gambar/foto2.jpg" alt="Photo Grid">
+                            <span class="fs-6">Rp 614.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+
+                        <div class="product-item">
+                            <h2> Wood Gold</h2>
+                            <img src="assets/gambar/foto3.jpg" alt=" Wood Gold">
+                            <span class="fs-6">Rp 614.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+
+                        <div class="product-item">
+                            <h2>Metal Gold</h2>
+                            <img src="assets/gambar/foto4.jpg" alt="Metal Gold">
+                            <span class="fs-6">Rp 417.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+
+
+                        <div class="product-item">
+                            <h2>Carlic Gold</h2>
+                            <img src="assets/gambar/foto5.jpg" alt="Pet Poster">
+                            <span class="fs-6">Rp 417.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+
+                        <div class="product-item">
+                            <h2>Carlic Silver</h2>
+                            <img src="assets/gambar/foto6.jpg" alt="Photo Grid">
+                            <span class="fs-6">Rp 42.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+
+                        <div class="product-item">
+                            <h2>Ceylon</h2>
+                            <img src="assets/gambar/foto7.jpg" alt=" Wood Gold">
+                            <span class="fs-6">Rp 417.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+
+                        <div class="product-item">
+                            <h2>Carlit White</h2>
+                            <img src="assets/gambar/foto8.jpg" alt="Metal Gold">
+                            <span class="fs-6">Rp 417.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                    <div class="product-list">
+                        <div class="product-item">
+                            <h2>Athena Black</h2>
+                            <img src="assets/gambar/foto1.jpg" alt="Pet Poster">
+                            <span class="fs-6">Rp 614.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+
+                        <div class="product-item">
+                            <h2> Wood Gold</h2>
+                            <img src="assets/gambar/foto3.jpg" alt=" Wood Gold">
+                            <span class="fs-6">Rp 614.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+
+                        <div class="product-item">
+                            <h2>Carlic Gold</h2>
+                            <img src="assets/gambar/foto5.jpg" alt="Pet Poster">
+                            <span class="fs-6">Rp 417.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                    <div class="product-list">
+                        <div class="product-item">
+                            <h2>Athena Gold</h2>
+                            <img src="assets/gambar/foto2.jpg" alt="Photo Grid">
+                            <span class="fs-6">Rp 614.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+
+                        <div class="product-item">
+                            <h2>Metal Gold</h2>
+                            <img src="assets/gambar/foto4.jpg" alt="Metal Gold">
+                            <span class="fs-6">Rp 417.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+
+                        <div class="product-item">
+                            <h2>Carlic Silver</h2>
+                            <img src="assets/gambar/foto6.jpg" alt="Photo Grid">
+                            <span class="fs-6">Rp 42.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+                    <div class="product-list">
+
+                        <div class="product-item">
+                            <h2>Ceylon</h2>
+                            <img src="assets/gambar/foto7.jpg" alt=" Wood Gold">
+                            <span class="fs-6">Rp 417.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+
+                        <div class="product-item">
+                            <h2>Carlit White</h2>
+                            <img src="assets/gambar/foto8.jpg" alt="Metal Gold">
+                            <span class="fs-6">Rp 417.000</span>
+                            <button type="button" class="btn btn-dark btn-rounded align-self-end" data-bs-toggle="modal"
+                                data-bs-target="#buyFrameModal">beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- modal buy frame -->
+        <div class="modal fade" id="buyFrameModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Frame Figure</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+
+                            <div class="mb-3">
+                                <label for="frameWidth" class="form-label">Lebar Bingkai(cm)</label>
+                                <input type="number" class="form-control" id="frameWidth" name="frameWidth" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="frameHeight" class="form-label">Tinggi Bingkai(cm)</label>
+                                <input type="number" class="form-control" id="frameHeight" name="frameHeight" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="glassAcrylicType" class="form-label">Tipe Kaca/Akrilik</label>
+                                <select class="form-select" id="glassAcrylicType" name="glassAcrylicType" required>
+                                    <option value="glass" selected disabled>Pilih tipe kaca</option>
+                                    <option value="glass">Kaca Biasa</option>
+                                    <option value="acrylic">Kaca Anti-Glare</option>
+                                    <option value="acrylic">Akrilik</option>
+                                    <option value="acrylic">Kaca UV Protection</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="customImage" class="form-label">Unggah Gambar(opsional)</label><br>
+                                <input type="file" class="form-control" id="customImage" name="customImage"
+                                    style="display: none;">
+                                <label for="customImage"
+                                    style="padding: 10px 20px; cursor: pointer; background-color: #007bff; color: #fff; border: none; border-radius: 5px;">Pilih
+                                    Foto</label>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="deliveryAddress" class="form-label">Alamat Kirim</label>
+                                <input type="text" class="form-control" id="deliveryAddress" name="deliveryAddress"
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contactName" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="contactName" name="contactName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactPhone" class="form-label">No. Hp</label>
+                                <input type="tel" class="form-control" id="contactPhone" name="contactPhone" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="specialInstructions" class="form-label">Instruksi
+                                    Khusus(opsional)</label>
+                                <textarea class="form-control" id="specialInstructions" name="specialInstructions"
+                                    rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        <button type="button" class="btn btn-primary" id="pesanButton">Pesan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end modal buy frame -->
+
+
+
+
+
+
+
+
+        <!-- footer -->
+        <div style="height: 2px;background-color: #000000;"></div>
+        <div class="bg-light">
+            <div class="container-fluid py-5" style="width: 70%;">
+                <span class="fs-3 fw-bold text-start">ChairdarFrame</span>
+                <div class="row mt-4">
+                    <div class="col-md-6 order-md-1 order-2">
+                        <h6 class="text-uppercase fw-bold mb-4">Kontak kami</h6>
+                        <p>ChairdarFrame@gmail.com</p>
+                        <p>0815-7508-9986</p>
+                        <p>DS Mejobo,kec Mejobo,kab Kudus, Jawa tengah</p>
+
+                        <a href="https://instagram.com/chaidarframe_mejobokudus?igshid=MzRlODBiNWFlZA=="><img
+                                src="https://img.freepik.com/premium-vector/black-square-social-media-logo_197792-3367.jpg?size=626&ext=jpg&ga=GA1.1.90356030.1694061817&semt=ais"
+                                width="40px" style="margin-left: -1%;"></a>
+
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1">
+                        <h6 class="text-uppercase fw-bold mb-4">Produk</h6>
+                        <p><a href="#" class="text-dark text-decoration-none">Frames</a></p>
+                        <p><a href="#" class="text-dark text-decoration-none">Arts Prints</a></p>
+                        <p><a href="#" class="text-dark text-decoration-none">Custom Frame</a></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 2px;background-color: #878E9D;"></div>
+        <footer class="container-fluid">
+            <div class="bg-light text-secondary p-3 text-center">
+                <p class="mb-0">Copyright © 2023. Seluruh hak cipta.</p>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+    </div>
+    <!-- Add Bootstrap JS and Popper.js (required for Bootstrap 5) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/loadpage.js"></script>
+</body>
+
+
+
+</html>
