@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+ }
+
+   .container {
+    max-width: 600px; /* Sesuaikan dengan lebar yang Anda inginkan */
+    margin: 0 auto;
+ }
+
+   .read-more-section {
+    margin-bottom: 20px;
+    text-align: center;
+ }
+
+   .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+ }
+   
+   .text {
+    display: none;
+ }
+
+   .initial-text {
+    margin-bottom: 0;
+ }
+
+   .additional-text {
+    display: none;
+ }
+
+  .bg-responsive{
+   background-image: url($url);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
+ .card {
+   display: inline-block;
+ }
+
+ .card img {
+   flex: 4;
+   max-width: 50%;
+   margin-right: 20px;
+   max-height: 280px;
+ }
+
+ .card text{
+   font-size: medium;
+   letter-spacing: normal;
+   line-height: normal;  
+ }
+
+ .Tag{
+   width: 100px;
+   height: 50px;
+ }
+
+   p {
+    margin-top: 20px;
+ }
