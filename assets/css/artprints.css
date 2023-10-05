@@ -1,53 +1,59 @@
-h2, h6 {
+h2 {
   margin-left: 20px;
-    padding: 20px;
-  }
+  padding: 20px;
+}
 
-  .input-group {
-    margin: 20px;
-  }
+h6 {
+  margin-left: 20px;
+  padding: 20px;
+}
 
-  .form-check {
-    margin-left: 40px;
-  }
+.input-group {
+  margin: 20px;
+}
 
-  .designService {
-    padding: 50px;
-  }
+.form-check {
+  margin-left: 40px;
+}
 
-  .card-img-top {
-    padding: 20px;
-    max-width: 100%; 
-    height: auto; 
-    text-align: center;
-  }
+.designService {
+  padding: 50px;
+}
 
-  .container .col {
-    height: 90%;
-  }
+.card-img-top {
+  padding: 20px;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
- .button {
+.container .col {
+  height: 85%;
+}
+
+.button {
+  display: flex;
   margin-top: 20px;
- }
+  justify-content: center;
+}
 
-  .row .col {
-    padding: 0 0 80px;
-    margin: 10px;
-  }
+.row .col {
+  padding: 0 0 100px;
+  margin: 10px;
+}
 
-  .btn {
-    margin: 10px 1px;
-  }
+.btn {
+  margin: 10px 1px;
+}
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-
-  .card:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
-    transition: transform 0.3s, box-shadow 0.3s; 
-  }
-  
-  .btn:hover {
-    background-color: #000;
-    color: #fff;
-    transition: background-color 0.3s, color 0.3s;
-  }
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}/*# sourceMappingURL=artprints.css.map */
