@@ -1,58 +1,79 @@
-$color_1: #fff;
-$background-color_1: #000;
+$primary-color: #f5f6f6;
+$card-color: #EAEAEA;
+$hover: 0 0 20px rgba(0, 0, 0, 0.2);
 
-h2 {
-	margin-left: 20px;
-	padding: 20px;
+$margin-padding: 20px;
+$margin-form-check: 40px;
+$padding-design-service: 50px;
+
+$font-btn: #fff;
+$button-color: #000;
+
+.container-fluid {
+	background-color: $primary-color;
 }
-h6 {
-	margin-left: 20px;
-	padding: 20px;
+
+h2, h6 {
+		margin-left: $margin-padding;
+		padding: $margin-padding;
 }
+
 .input-group {
-	margin: 20px;
+	margin: $margin-padding;
 }
+
 .form-check {
-	margin-left: 40px;
+	margin-left: $margin-form-check;
 }
+
 .designService {
-	padding: 50px;
+	padding: $padding-design-service;
 }
+
 .card-img-top {
-	padding: 20px;
+	padding: $margin-padding;
 	height: 70%;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
 .container {
 	.col {
 		height: 85%;
 	}
 }
+
+.card {
+	background-color: $card-color;
+}
+
 .button {
 	display: flex;
-	margin-top: 20px;
+	margin-top: $margin-padding;
 	justify-content: center;
 }
+
 .row {
 	.col {
 		padding: 0 0 100px;
 		margin: 10px;
 	}
 }
+
 .btn {
 	margin: 10px 1px;
 	&:hover {
-		background-color: $background-color_1;
-		color: $color_1;
+		background-color: $button-color;
+		color: $font-btn;
 		transition: background-color 0.3s, color 0.3s;
 	}
 }
+
 .card {
 	&:hover {
 		transform: scale(1.05);
-		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		box-shadow: $hover;
 		transition: transform 0.3s, box-shadow 0.3s;
 	}
 }
