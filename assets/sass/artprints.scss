@@ -1,11 +1,14 @@
+@function calculateMargin($margin) {
+	@return $margin * 2;
+}
+
+@function calculatePadding($padding) {
+	@return $padding * 5;
+}
+
 $primary-color: #f5f6f6;
 $card-color: #EAEAEA;
 $hover: 0 0 20px rgba(0, 0, 0, 0.2);
-
-$margin-padding: 20px;
-$margin-form-check: 40px;
-$padding-design-service: 50px;
-
 $font-btn: #fff;
 $button-color: #000;
 
@@ -14,25 +17,25 @@ $button-color: #000;
 }
 
 h2, h6 {
-		margin-left: $margin-padding;
-		padding: $margin-padding;
+		margin-left: calculateMargin(10px);
+		padding: calculatePadding(4px);
 }
 
 .input-group {
-	margin: $margin-padding;
+	margin: calculateMargin(10px);
 }
 
 .form-check {
-	margin-left: $margin-form-check;
+	margin-left: calculateMargin(20px);
 }
 
 .designService {
-	padding: $padding-design-service;
+	padding: calculatePadding(10px);
 }
 
 .card-img-top {
-	padding: $margin-padding;
-	height: 70%;
+	padding: calculatePadding(4px);
+	height: percentage(0.7);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -40,7 +43,7 @@ h2, h6 {
 
 .container {
 	.col {
-		height: 85%;
+		height: percentage(0.85);
 	}
 }
 
@@ -50,7 +53,7 @@ h2, h6 {
 
 .button {
 	display: flex;
-	margin-top: $margin-padding;
+	margin-top: calculateMargin(10px);
 	justify-content: center;
 }
 
