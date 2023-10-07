@@ -1,3 +1,6 @@
+@use "color";
+@import "setting-button";
+
 @function calculateMargin($margin) {
 	@return $margin * 2;
 }
@@ -6,19 +9,25 @@
 	@return $padding * 5;
 }
 
-$primary-color: #f5f6f6;
-$card-color: #EAEAEA;
-$hover: 0 0 20px rgba(0, 0, 0, 0.2);
-$font-btn: #fff;
-$button-color: #000;
-
-.container-fluid {
-	background-color: $primary-color;
+@mixin hover {
+	&:hover {
+		transform: scale(1.05);
+		box-shadow: color.$hover;
+		transition: transform 0.3s, box-shadow 0.3s;
+	}
 }
 
-h2, h6 {
+.container-fluid {
+	background-color: color.$primary-color;
+}
+
+h2 {
 		margin-left: calculateMargin(10px);
 		padding: calculatePadding(4px);
+}
+
+h6 {
+	@extend h2;
 }
 
 .input-group {
@@ -48,7 +57,8 @@ h2, h6 {
 }
 
 .card {
-	background-color: $card-color;
+	background-color: color.$card-color;
+	@include hover;
 }
 
 .button {
@@ -64,19 +74,4 @@ h2, h6 {
 	}
 }
 
-.btn {
-	margin: 10px 1px;
-	&:hover {
-		background-color: $button-color;
-		color: $font-btn;
-		transition: background-color 0.3s, color 0.3s;
-	}
-}
 
-.card {
-	&:hover {
-		transform: scale(1.05);
-		box-shadow: $hover;
-		transition: transform 0.3s, box-shadow 0.3s;
-	}
-}

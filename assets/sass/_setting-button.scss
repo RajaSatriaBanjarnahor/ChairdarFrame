@@ -1,0 +1,15 @@
+$font-btn: #fff;
+$button-color: #000;
+
+@mixin btn-hover {
+&:hover {
+	background-color: $button-color;
+	color: $font-btn;
+	transition: background-color 0.3s, color 0.3s;
+}
+}
+
+.btn {
+	margin: 10px 1px;
+	@include btn-hover;
+}
