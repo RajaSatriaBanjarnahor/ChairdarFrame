@@ -5,6 +5,22 @@
   color: #333;
 }
 
+.text-display-1 {
+  font-size: 12px;
+}
+
+.text-display-2 {
+  font-size: 24px;
+}
+
+.text-display-3 {
+  font-size: 36px;
+}
+
+.text-display-4 {
+  font-size: 48px;
+}
+
 * {
   margin: 0;
 }
@@ -84,13 +100,6 @@ body {
     height: 290px;
   }
 }
-.custom-font {
-  font-size: 32px;
-  line-height: 1.5;
-  font-weight: bold;
-  color: #333;
-}
-
 div.card.customWU:hover {
   height: 100%;
 }

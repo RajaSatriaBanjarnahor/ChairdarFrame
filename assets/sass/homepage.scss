@@ -1,4 +1,4 @@
-@use "setting";
+@use "variables";
 @import "custom-font";
 
 
@@ -25,7 +25,7 @@ body {
   }
 
   .imgWidth {
-    width: setting.$size2;
+    width: variables.$size2;
   }
 
   div.card.customWU {
@@ -39,11 +39,11 @@ body {
   }
 
   .imgWidth {
-    width: setting.$size2;
+    width: variables.$size2;
   }
 
   div.card.customWU {
-    height: setting.$size2;
+    height: variables.$size2;
   }
 }
 
@@ -109,18 +109,8 @@ body {
   }
 }
 
-.custom-font {
-  $font-attributes: set-font(32px, 1.5);
-  
-  font-size: map-get($font-attributes, font-size);
-  line-height: map-get($font-attributes, line-height);
-  
-  font-weight: bold;
-  color: #333;
-}
-
 div.card.customWU:hover {
-  height: setting.$size1;
+  height: variables.$size1;
 }
 
 .custom-card .card-text {

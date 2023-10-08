@@ -14,3 +14,12 @@
     font-weight: bold;
     color: #333;
   }
+
+  $base-font-size: 12px;
+
+  @for $i from 1 to 5 {
+    .text-display-#{$i} {
+      font-size: $base-font-size * $i;
+    }
+  }
+  
