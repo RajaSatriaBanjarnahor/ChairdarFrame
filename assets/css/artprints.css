@@ -1,9 +1,17 @@
-h2 {
-  margin-left: 20px;
-  padding: 20px;
+.btn {
+  margin: 10px 1px;
+}
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-h6 {
+.container-fluid {
+  background-color: #f5f6f6;
+}
+
+h2, h6 {
   margin-left: 20px;
   padding: 20px;
 }
@@ -32,6 +40,15 @@ h6 {
   height: 85%;
 }
 
+.card {
+  background-color: #EAEAEA;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
 .button {
   display: flex;
   margin-top: 20px;
@@ -43,17 +60,4 @@ h6 {
   margin: 10px;
 }
 
-.btn {
-  margin: 10px 1px;
-}
-.btn:hover {
-  background-color: #000;
-  color: #fff;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-}/*# sourceMappingURL=artprints.css.map */
+/*# sourceMappingURL=artprints.css.map */

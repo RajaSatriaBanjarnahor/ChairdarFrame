@@ -10,14 +10,30 @@ body {
    .text {
     display: none;
  }
+ 
+/* Make text responsive */
+@media (max-width: 576px) {
+  .text {
+      font-size: 14px;
+  }
+}
 
-   .initial-text {
-    margin-bottom: 0;
- }
+@media (min-width: 577px) and (max-width: 768px) {
+  .text {
+      font-size: 16px;
+  }
+}
 
-   .additional-text {
-    display: none;
- }
+@media (min-width: 769px) and (max-width: 992px) {
+  .text {
+      font-size: 18px;
+  }
+}
+.initial-text,
+.additional-text {
+  font-size: medium; /* atau sesuaikan dengan preferensi Anda */
+}
+
  .navbar {
   padding: 10px;
 }
@@ -42,17 +58,15 @@ body {
  }
 
  .card img {
-   flex: 4;
-   max-width: 50%;
-   margin-right: 20px;
-   max-height: 280px;
- }
+  width: 100%;
+  height: auto;
+  margin-right: 0;
+}
 
- .card text{
-   font-size: large;
-   letter-spacing: normal;
-   line-height: normal;  
- }
+.card text {
+  font-size: medium; /* atau sesuaikan dengan preferensi Anda */
+  /* tambahkan gaya lainnya jika diperlukan */
+}
 
  .Tag{
    width: 100px;
@@ -62,3 +76,7 @@ body {
    p {
     margin-top: 20px;
  }
+
+ footer {
+  text-align: center;
+}

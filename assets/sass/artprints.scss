@@ -1,58 +1,77 @@
-$color_1: #fff;
-$background-color_1: #000;
+@use "color";
+@import "setting-button";
+
+@function calculateMargin($margin) {
+	@return $margin * 2;
+}
+
+@function calculatePadding($padding) {
+	@return $padding * 5;
+}
+
+@mixin hover {
+	&:hover {
+		transform: scale(1.05);
+		box-shadow: color.$hover;
+		transition: transform 0.3s, box-shadow 0.3s;
+	}
+}
+
+.container-fluid {
+	background-color: color.$primary-color;
+}
 
 h2 {
-	margin-left: 20px;
-	padding: 20px;
+		margin-left: calculateMargin(10px);
+		padding: calculatePadding(4px);
 }
+
 h6 {
-	margin-left: 20px;
-	padding: 20px;
+	@extend h2;
 }
+
 .input-group {
-	margin: 20px;
+	margin: calculateMargin(10px);
 }
+
 .form-check {
-	margin-left: 40px;
+	margin-left: calculateMargin(20px);
 }
+
 .designService {
-	padding: 50px;
+	padding: calculatePadding(10px);
 }
+
 .card-img-top {
-	padding: 20px;
-	height: 70%;
+	padding: calculatePadding(4px);
+	height: percentage(0.7);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
+
 .container {
 	.col {
-		height: 85%;
+		height: percentage(0.85);
 	}
 }
+
+.card {
+	background-color: color.$card-color;
+	@include hover;
+}
+
 .button {
 	display: flex;
-	margin-top: 20px;
+	margin-top: calculateMargin(10px);
 	justify-content: center;
 }
+
 .row {
 	.col {
 		padding: 0 0 100px;
 		margin: 10px;
 	}
 }
-.btn {
-	margin: 10px 1px;
-	&:hover {
-		background-color: $background-color_1;
-		color: $color_1;
-		transition: background-color 0.3s, color 0.3s;
-	}
-}
-.card {
-	&:hover {
-		transform: scale(1.05);
-		box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-		transition: transform 0.3s, box-shadow 0.3s;
-	}
-}
+
+
