@@ -167,6 +167,21 @@ a {
   flex-wrap: wrap;
   justify-content: center;
 }
+.product-list .product-item:nth-child(1) {
+  background-color: #1a1a1a;
+}
+.product-list .product-item:nth-child(2) {
+  background-color: black;
+}
+.product-list .product-item:nth-child(3) {
+  background-color: black;
+}
+.product-list .product-item:nth-child(4) {
+  background-color: black;
+}
+.product-list .product-item:nth-child(5) {
+  background-color: black;
+}
 .product-list .product-item {
   background-color: #fff;
   border: 1px solid #ddd;

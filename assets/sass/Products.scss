@@ -1,4 +1,3 @@
-
 @import 'colors'; 
 @import 'functions';
 @import 'base';
@@ -90,6 +89,14 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  // Perulangan untuk .product-item dengan warna yang berbeda
+  @for $i from 1 through 5 {
+    .product-item:nth-child(#{$i}) {
+      background-color: darken($primary-color, 10% * $i);
+    }
+  }
+
   .product-item {
     background-color: #fff;
     border: 1px solid $border-color;
