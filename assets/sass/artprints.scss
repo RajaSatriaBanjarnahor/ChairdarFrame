@@ -17,7 +17,7 @@
 	}
 }
 
-.container-fluid {
+#judul {
 	background-color: color.$primary-color;
 }
 
@@ -32,6 +32,7 @@ h6 {
 
 .input-group {
 	margin: calculateMargin(10px);
+	padding-right: calculatePadding(10px);
 }
 
 .form-check {
