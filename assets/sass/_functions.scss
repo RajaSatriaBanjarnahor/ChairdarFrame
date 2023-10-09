@@ -1,0 +1,9 @@
+// _functions.scss
+@function calculate-border-radius($radius) {
+    @return $radius * 4;
+  }
+  
+  @function calculate-padding($padding) {
+    @return $padding * 2;
+  }
+  

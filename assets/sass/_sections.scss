@@ -1,0 +1,9 @@
+// _sections.scss
+.section {
+    background-color: $background-color;
+    margin-top: 0px;
+    padding: calculate-padding(10px);
+    border: 1px solid $border-color;
+    border-radius: calculate-border-radius(5px);
+  }
+  

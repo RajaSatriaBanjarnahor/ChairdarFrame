@@ -1,3 +1,13 @@
+
+@import 'colors'; 
+@import 'functions';
+@import 'base';
+@import 'sections';
+@import 'navigation';
+@import 'search';
+@import 'checkboxes';
+@import 'produk';
+
 @function calculate-border-radius($radius) {
   @return $radius * 4;
 }
