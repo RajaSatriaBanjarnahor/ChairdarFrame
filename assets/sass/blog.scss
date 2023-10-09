@@ -1,0 +1,98 @@
+// _variables.scss
+$font-family: Arial, sans-serif;
+$small-screen: 576px;
+$medium-screen-min: 577px;
+$medium-screen-max: 768px;
+$large-screen-min: 769px;
+$large-screen-max: 992px;
+
+// _mixins.scss
+@mixin text-responsive($size) {
+  @media (max-width: $small-screen) {
+    font-size: $size - 2;
+  }
+
+  @media (min-width: $medium-screen-min) and (max-width: $medium-screen-max) {
+    font-size: $size;
+  }
+
+  @media (min-width: $large-screen-min) and (max-width: $large-screen-max) {
+    font-size: $size + 2;
+  }
+}
+
+// _functions.scss
+@function calculate-font-size($size) {
+  @return $size + 2;
+}
+
+// main.scss
+@use 'variables';
+@use 'mixins';
+@use 'functions';
+
+body {
+  font-family: variables.$font-family;
+}
+
+.read-more-section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text {
+  display: none;
+  @include mixins.text-responsive(16px); // You can set a default size here
+}
+
+.initial-text,
+.additional-text {
+  font-size: medium; // atau sesuaikan dengan preferensi Anda
+}
+
+.navbar {
+  padding: 10px;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+}
+
+.form-control {
+  flex: 1;
+}
+
+.bg-responsive {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  display: inline-block;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  text {
+    font-size: medium; // atau sesuaikan dengan preferensi Anda
+    // tambahkan gaya lainnya jika diperlukan
+  }
+}
+
+.Tag {
+  width: 100px;
+  height: 50px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+}
