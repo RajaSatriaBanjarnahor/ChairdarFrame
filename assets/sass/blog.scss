@@ -23,9 +23,7 @@ $large-screen-max: 992px;
 }
 }
 
-@use 'variables';
-@use 'mixins';
-@use 'functions';
+//variabel
 
 body {
 font-family: variables.$font-family;
