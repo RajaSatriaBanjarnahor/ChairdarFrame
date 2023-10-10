@@ -34,4 +34,14 @@ function filterProducts(category) {
             item.style.display = 'none';
         }
     });
+
+    function showFrameModal() {
+        $('#FrameModal').modal('show');
+      }
+  
+      // Attach the function to the "Pesan" button's click event
+      $(document).ready(function () {
+        $('#pesanButton').click(function () {
+          showFrameModal();
+        });
 }

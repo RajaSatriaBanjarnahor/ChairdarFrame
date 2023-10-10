@@ -7,6 +7,8 @@
   <title>ChairdarFrame</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/navbar.css">
   <link rel="stylesheet" href="assets/css/Products.css">
@@ -97,34 +99,117 @@
           <img src="https://i.pinimg.com/564x/93/64/b7/9364b7d445e8ec3186f30eb701e7041e.jpg" alt="Pet Poster">
           <h2>Pet Poster</h2>
           <p><i>Potret bersama hewan peliharaanmu.</i></p>
-          <button>Detail</button>
-          <button>Beli</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#FrameModal">
+            Pesan
+          </button>
       </div>
   
       <div class="product-item" data-category="Design Favorit">
           <img src="https://i.pinimg.com/564x/97/97/e6/9797e67001395e6634642a05aa64dc7b.jpg" alt="Photo Grid">
           <h2>Photo Grid</h2>
           <p><i>Gabungkan semua momen indah dalam hidup.</i></p>
-          <button>Detail</button>
-          <button>Beli</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#FrameModal">
+            Pesan
+          </button>
       </div>
   
       <div class="product-item" data-category="Design Favorit">
           <img src="https://i.pinimg.com/564x/c2/eb/c2/c2ebc244895d1211a39f0c2d0006872b.jpg" alt="Custom Photo">
           <h2>Custom Photo</h2>
           <p><i>Abadikan momen penting bersama orang terdekat.</i></p>
-          <button>Detail</button>
-          <button>Beli</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#FrameModal">
+            Pesan
+          </button>
       </div>
   
       <div class="product-item" data-category="Design Terbaru">
           <img src="https://i.pinimg.com/564x/44/19/ed/4419ed76fb4f309f96a7615dc3e0f98c.jpg" alt="Baby Name Initials">
           <h2>Baby Name Initials</h2>
           <p><i>Jangan lewatkan langkah awal sikecil.</i></p>
-          <button>Detail</button>
-          <button>Beli</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#FrameModal">
+            Pesan
+          </button>
       </div>
   </div>
+
+   <!-- modal custom frame -->
+   <div class="modal fade" id="FrameModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Custom Frame Figure</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="mb-3">
+              <label for="frameType" class="form-label">Frame Type</label>
+              <select class="form-select" id="frameType" name="frameType">
+                <option value="wood" selected disabled>Pilih bahan Frame</option>
+                <option value="wood">Wood</option>
+                <option value="metal">Metal</option>
+                <option value="plastic">Plastic</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="frameWidth" class="form-label">Lebar Bingkai(cm)</label>
+              <input type="number" class="form-control" id="frameWidth" name="frameWidth" required>
+            </div>
+            <div class="mb-3">
+              <label for="frameHeight" class="form-label">Tinggi Bingkai(cm)</label>
+              <input type="number" class="form-control" id="frameHeight" name="frameHeight" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="frameColorFinish" class="form-label">Warna Bingkai</label>
+              <input type="text" class="form-control" id="frameColorFinish" name="frameColorFinish" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="glassAcrylicType" class="form-label">Tipe Kaca/Akrilik</label>
+              <select class="form-select" id="glassAcrylicType" name="glassAcrylicType" required>
+                <option value="glass" selected disabled>Pilih tipe kaca</option>
+                <option value="glass">Kaca Biasa</option>
+                <option value="acrylic">Kaca Anti-Glare</option>
+                <option value="acrylic">Akrilik</option>
+                <option value="acrylic">Kaca UV Protection</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="deliveryAddress" class="form-label">Alamat Kirim</label>
+              <input type="text" class="form-control" id="deliveryAddress" name="deliveryAddress" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="contactName" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="contactName" name="contactName" required>
+            </div>
+            <div class="mb-3">
+              <label for="contactEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="contactPhone" class="form-label">No. Hp</label>
+              <input type="tel" class="form-control" id="contactPhone" name="contactPhone" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="specialInstructions" class="form-label">Instruksi Khusus(opsional)</label>
+              <textarea class="form-control" id="specialInstructions" name="specialInstructions" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary" id="pesanButton">Pesan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal custom frame -->
   
   </div><br>
   <div style="height: 2px;background-color: #000000;"></div><br>
@@ -186,7 +271,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-  </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="assets/js/Products.js"></script>
 </body>
 
