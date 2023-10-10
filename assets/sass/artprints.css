@@ -1,0 +1,62 @@
+.btn {
+  margin: 10px 1px;
+}
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#judul {
+  background-color: #e6e6e6;
+}
+
+h2, h6 {
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.input-group {
+  margin: 20px;
+  padding-right: 50px;
+}
+
+.form-check {
+  margin-left: 40px;
+}
+
+.designService {
+  padding: 50px;
+}
+
+.card-img-top {
+  padding: 20px;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container .col {
+  height: 85%;
+}
+
+.card {
+  background-color: #EAEAEA;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.row .col {
+  padding: 0 0 100px;
+  margin: 10px;
+}/*# sourceMappingURL=artprints.css.map */
