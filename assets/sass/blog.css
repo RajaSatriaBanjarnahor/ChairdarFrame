@@ -1,4 +1,3 @@
-/*# sourceMappingURL=blog.css.map */
 body {
     font-family: Arial, sans-serif;
  }
@@ -9,7 +8,7 @@ body {
  }
    
    .text {
-    display: none;
+        display: none;
  }
  
 /* Make text responsive */

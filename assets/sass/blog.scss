@@ -1,9 +1,7 @@
-// _functions.scss
 @function calculate-font-size($size) {
   @return $size + 2;
 }
 
-// _variables.scss
 $font-family: Arial, sans-serif;
 $small-screen: 576px;
 $medium-screen-min: 577px;
@@ -11,7 +9,6 @@ $medium-screen-max: 768px;
 $large-screen-min: 769px;
 $large-screen-max: 992px;
 
-// _mixins.scss
 @mixin text-responsive($size) {
 @media (max-width: $small-screen) {
   font-size: $size - 2;
@@ -26,7 +23,6 @@ $large-screen-max: 992px;
 }
 }
 
-// main.scss
 @use 'variables';
 @use 'mixins';
 @use 'functions';
