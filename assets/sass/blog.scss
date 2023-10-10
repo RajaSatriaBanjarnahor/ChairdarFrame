@@ -1,7 +1,7 @@
 // _functions.scss
 @function calculate-font-size($size) {
-    @return $size + 2;
-  }
+  @return $size + 2;
+}
 
 // _variables.scss
 $font-family: Arial, sans-serif;
@@ -13,17 +13,17 @@ $large-screen-max: 992px;
 
 // _mixins.scss
 @mixin text-responsive($size) {
-  @media (max-width: $small-screen) {
-    font-size: $size - 2;
-  }
+@media (max-width: $small-screen) {
+  font-size: $size - 2;
+}
 
-  @media (min-width: $medium-screen-min) and (max-width: $medium-screen-max) {
-    font-size: $size;
-  }
+@media (min-width: $medium-screen-min) and (max-width: $medium-screen-max) {
+  font-size: $size;
+}
 
-  @media (min-width: $large-screen-min) and (max-width: $large-screen-max) {
-    font-size: $size + 2;
-  }
+@media (min-width: $large-screen-min) and (max-width: $large-screen-max) {
+  font-size: $size + 2;
+}
 }
 
 // main.scss
@@ -32,66 +32,66 @@ $large-screen-max: 992px;
 @use 'functions';
 
 body {
-  font-family: variables.$font-family;
+font-family: variables.$font-family;
 }
 
 .read-more-section {
-  margin-bottom: 20px;
-  text-align: center;
+margin-bottom: 20px;
+text-align: center;
 }
 
 .text {
-  display: none;
-  @include mixins.text-responsive(16px); 
+display: none;
+@include mixins.text-responsive(16px); 
 }
 
 .initial-text,
 .additional-text {
-  font-size: medium;
+font-size: medium;
 } 
 
 .navbar {
-  padding: 10px;
+padding: 10px;
 }
 
 .input-group {
-  display: flex;
-  width: 100%;
+display: flex;
+width: 100%;
 }
 
 .form-control {
-  flex: 1;
+flex: 1;
 }
 
 .bg-responsive {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 .card {
-  display: inline-block;
+display: inline-block;
 
-  img {
-    width: 100%;
-    height: auto;
-    margin-right: 0;
-  }
+img {
+  width: 100%;
+  height: auto;
+  margin-right: 0;
+}
 
-  text {
-    font-size: medium; 
-  }
+text {
+  font-size: medium; 
+}
 }
 
 .Tag {
-  width: 100px;
-  height: 50px;
+width: 100px;
+height: 50px;
 }
 
 p {
-  margin-top: 20px;
+margin-top: 20px;
 }
 
 footer {
-  text-align: center;
+text-align: center;
 }
