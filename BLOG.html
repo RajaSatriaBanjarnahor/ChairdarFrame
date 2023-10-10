@@ -61,63 +61,84 @@
 
     </header>
   </div>
-    <!-- end Header -->
-
+  <!-- end Header -->
     <div class="container-fluid" style="background-color: #f5f6f6;">
       <h2>BLOG</h2>
     </div>
     <nav class="navbar bg-body-tertiary">
       <form class="container-fluid" id="searchForm">
       </form>
+  <div class="container-fluid" style="background-color: #f5f6f6;">
+    <h2>BLOG</h2>
+  </div>
+  <nav class="navbar bg-body-tertiary">
+    <form class="container-fluid" id="searchForm">
+      <div class="input-group">
+        <input type="search" class="form-control" id="searchInput" placeholder="Search" aria-label="Search"
+          aria-describedby="basic-addon1">
+        <button class="search-button" onclick="searchblog()">Cari</button>
+      </div>
+    </form>
   </nav>
 
-      <center>
-        <div class="designService">
-          <h5>Design Service</h5>
-          <p>Lihat info terbaru dari ChaidarFrame.</p>
-        </div>
-      </center>
+  <center>
+    <div class="designService pt-5">
+      <h5>Design Service</h5>
+      <p>Lihat info terbaru dari ChaidarFrame.</p>
+    </div>
+  </center>
 
-      <div class="row">
-        <!-- Section 1 -->
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card mb-5 shadow-sm d-flex flex-row">
-            <img src="assets/img/bingkaifoto.jpg" alt="img 1" class="img-fluid" />
-          <center>
-            <div class="read-more-section">
-              <h2><p class="initial-text">Custom Framing for Special Occasions: How to 
-                Create Personalized Gifts for Weddings,
-                Graduations, and Other Celebrations. </p></h2>
-                <p>By ChaidarFrame - 10 April 2023</p>
-              <p class="additional-text">Apakah Anda mencari hadiah unik dan personal untuk acara spesial? Pembingkaian khusus mungkin
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Section 1 -->
+      <div class="col-12 d-flex align-items-center justify-content-center pt-5">
+        <div class="card row shadow-sm d-flex flex-row">
+          <div class="col-sm-6 col-12 d-flex align-items-center flex-wrap justify-content-center">
+            <img src="assets/img/bingkaifoto.jpg" alt="img 1" class="img-fluid px-md-0 px-5" />
+          </div>
+
+          <div class="col-sm-6 col-12 read-more-section text-start">
+            <div class="container-fluid p-5">
+              <h2>
+                <p class="fs-5">Custom Framing for Special Occasions: How to
+                  Create Personalized Gifts for Weddings,
+                  Graduations, and Other Celebrations. </p>
+              </h2>
+              <p>By ChaidarFrame - 10 April 2023</p>
+              <p class="additional-text" style="display: none;">Apakah Anda mencari hadiah unik dan personal untuk acara spesial? Pembingkaian
+                khusus mungkin
                 merupakan solusi sempurna. Dengan pembingkaian khusus, Anda dapat mengubah kenangan dan
                 kenang-kenangan berharga menjadi hadiah indah dan bijaksana yang akan disimpan selama
                 bertahun-tahun yang akan datang.... "Read More".</p>
-                <button class="btn btn-primary read-more-btn">Read More</button>
+              <button class="btn btn-primary read-more-btn">Read More</button>
             </div>
-            </div>
-          </center>
           </div>
         </div>
+      </div>
 
-        <!-- Section 2 -->
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card mb-5 shadow-sm d-flex flex-row">
-            <img src="assets/img/blogpics9.jpg" alt="img 2" class="img-fluid" />
-          <center>
-            <div class="read-more-section">
-              <h2><p class="initial-text">Tips Memilih Bingkai Foto yang Tepat untuk Foto Kesayangan Anda</p></h2>
-                <P>By ChaidarFrame - 31 March 2023</P>
-              <p class="additional-text">Apakah Anda memiliki foto kesayangan yang ingin dijadikan sebagai pajangan
-                  di dinding rumah atau kantor? Salah satu cara untuk mempercantik tampilan foto
-                  tersebut adalah dengan menggunakan bingkai foto. Dalam artikel ini, kami akan memberikan
-                  beberapa tips untuk memilih bingkai foto yang tepat untuk foto kesayangan Anda...."Read More".
-                </p>
-                <button class="btn btn-primary read-more-btn">Read More</button>
+      <!-- Section 2 -->
+      <div class="col-12 d-flex align-items-center justify-content-center pt-5">
+        <div class="card row shadow-sm d-flex flex-row">
+          <div class="col-sm-6 col-12 d-flex align-items-center flex-wrap justify-content-center">
+            <img src="assets/img/blogpics9.jpg" alt="img 1" class="img-fluid px-md-0 px-5" />
+          </div>
+
+          <div class="col-sm-6 col-12 read-more-section text-start">
+            <div class="container-fluid p-5">
+              <h2>
+                <p class="fs-5">Tips Memilih Bingkai Foto yang Tepat untuk Foto Kesayangan Anda</p>
+              </h2>
+              <p>By ChaidarFrame - 31 March 2023</p>
+              <p class="additional-text" style="display: none;">Apakah Anda memiliki foto kesayangan yang ingin dijadikan sebagai pajangan
+            di dinding rumah atau kantor? Salah satu cara untuk mempercantik tampilan foto
+            tersebut adalah dengan menggunakan bingkai foto. Dalam artikel ini, kami akan memberikan
+            beberapa tips untuk memilih bingkai foto yang tepat untuk foto kesayangan Anda...."Read More".
+          </p>
+              <button class="btn btn-primary read-more-btn">Read More</button>
             </div>
-          </center>
           </div>
         </div>
+      </div>
 
         <!-- Section 3 -->
         <div class="col-lg-4 col-md-6 col-sm-12">
@@ -130,37 +151,59 @@
                 <p>Matboard menambahkan sentuhan dekoratif pada karya seni Anda,
                   memberikan tampilan yang tajam dan selesai.</p>
               <p class="additional-text">ChaidarFrame dengan bangga menawarkan matboard Canson Mosaïca®, yang diproduksi di Annonay,
+      <!-- Section 3 -->
+      <div class="col-12 d-flex align-items-center justify-content-center pt-5">
+        <div class="card row shadow-sm d-flex flex-row">
+          <div class="col-sm-6 col-12 d-flex align-items-center flex-wrap justify-content-center">
+            <img src="assets/img/blogpics20.png" alt="img 1" class="img-fluid px-md-0 px-5" />
+          </div>
+
+          <div class="col-sm-6 col-12 read-more-section text-start">
+            <div class="container-fluid p-5">
+              <h2>
+                <p class="fs-5">Introducing our New Canson Mosaïca® Mat Boards</p>
+              </h2>
+              <p>By ChaidarFrame - 05 August 2021</p>
+              <p Matboard menambahkan sentuhan dekoratif pada karya seni Anda, memberikan tampilan yang tajam dan selesai.>
+              </p>
+              <p class="additional-text" style="display: none;">ChaidarFrame dengan bangga menawarkan matboard Canson Mosaïca®, yang diproduksi di
+                Annonay,
                 Perancis oleh dan diekspor ke lebih dari 150 negara, Canson® adalah pemimpin pasar global
                 kertas Seni Rupa, pelaku utama produk konservasi, kertas gambar sekolah dan rekreasi,
-                serta kertas cetak teknis dan digital...."Read More".
-                </p>
-                <button class="btn btn-primary read-more-btn">Read More</button>
+                serta kertas cetak teknis dan digital...."Read More".</p>
+              <button class="btn btn-primary read-more-btn">Read More</button>
             </div>
-          </center>
           </div>
         </div>
+      </div>
 
-        <!-- Section 4 -->
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <div class="card mb-5 shadow-sm d-flex flex-row">
-            <img src="assets/img/blogpics12.jpg" alt="img 4" class="img-fluid" />
-          <center>
-            <div class="read-more-section">
-            <h2><p class="initial-text">Website Gratis untuk Download Karya Seni, Ilustrasi & Fotografi</p></h2>
-                <P>By ChaidarFrame - 22 January 2021</P>
-              <p class="additional-text">Menampilkan sebuah karya seni di dinding kosong menciptakan perasaan yang luar biasa, tapi
+      <!-- Section 4 -->
+      <div class="col-12 d-flex align-items-center justify-content-center pt-5">
+        <div class="card row shadow-sm d-flex flex-row">
+          <div class="col-12 d-flex align-items-center flex-wrap justify-content-center">
+            <img src="assets/img/blogpics12.jpg" alt="img 1" class="img-fluid px-md-0 px-5" />
+          </div>
+
+          <div class="col-12 read-more-section text-start">
+            <div class="container-fluid p-5">
+              <h2>
+                <p class="fs-5">Website Gratis untuk Download Karya Seni, Ilustrasi & Fotografi</p>
+              </h2>
+              <p>By ChaidarFrame - 22 January 2021</p>
+              <p class="additional-text" style="display: none;">Menampilkan sebuah karya seni di dinding kosong menciptakan perasaan yang luar
+                biasa, tapi
                 terkadang menemukan karya yang Anda sukai tanpa mengeluarkan kocek yang
                 besar dapat menjadi tantangan tersendiri.
                 Berikut adalah 5 website favorit kami untuk download gambar gratis dengan
                 tema yang unik, menarik, dan ber-resolusi tinggi. Setelah Anda temukan gambar yang disukai,
                 upload ke ChaidarFrame.com dan pilih tampilan bingkai / pigura yang Anda inginkan, lalu pesan
-                dan nantikan. Karya seni terbaru Anda akan hadir dalam 5 - 7 hari kerja...."Read More".
-                </p>
-                <button class="btn btn-primary read-more-btn">Read More</button>
+                dan nantikan. Karya seni terbaru Anda akan hadir dalam 5 - 7 hari kerja...."Read More".</p>
+              <button class="btn btn-primary read-more-btn">Read More</button>
             </div>
-          </center>
           </div>
         </div>
+      </div>
+
 
     <!-- footer -->
     <div style="height: 2px;background-color: #000000;"></div>
@@ -184,18 +227,45 @@
             <p><a href="frames.html" class="text-dark text-decoration-none">Frames</a></p>
             <p><a href="artprints.html" class="text-dark text-decoration-none">Arts Prints</a></p>
             <p><a href="Homepage.html#pesanCustom" class="text-dark text-decoration-none">Custom Frame</a></p>
+    </div>
+  </div>
 
-          </div>
+
+  <!-- footer -->
+  <div style="height: 2px;background-color: #000000;"></div>
+  <div class="bg-light">
+    <div class="container-fluid py-5" style="width: 70%;">
+      <span class="fs-3 fw-bold text-start">ChairdarFrame</span>
+      <div class="row mt-4">
+        <div class="col-md-6 order-md-1 order-2">
+          <h6 class="text-uppercase fw-bold mb-4">Kontak kami</h6>
+          <p>ChairdarFrame@gmail.com</p>
+          <p>0815-7508-9986</p>
+          <p>DS Mejobo,kec Mejobo,kab Kudus, Jawa tengah</p>
+
+          <a href="https://instagram.com/chaidarframe_mejobokudus?igshid=MzRlODBiNWFlZA=="><img
+              src="https://img.freepik.com/premium-vector/black-square-social-media-logo_197792-3367.jpg?size=626&ext=jpg&ga=GA1.1.90356030.1694061817&semt=ais"
+              width="40px" style="margin-left: -1%;"></a>
+
+        </div>
+        <div class="col-md-6 order-md-2 order-1">
+          <h6 class="text-uppercase fw-bold mb-4">Produk</h6>
+          <p><a href="frames.html" class="text-dark text-decoration-none">Frames</a></p>
+          <p><a href="artprints.html" class="text-dark text-decoration-none">Arts Prints</a></p>
+          <p><a href="Homepage.html#pesanCustom" class="text-dark text-decoration-none">Custom Frame</a></p>
+          <p><a href="Blog.html" class="text-dark text-decoration-none">BLOG</a></p>
+
         </div>
       </div>
     </div>
-    <div style="height: 2px;background-color: #878E9D;"></div>
-    <footer class="container-fluid">
-      <div class="bg-light text-secondary p-3 text-center">
-        <p class="mb-0">Copyright © 2023. Seluruh hak cipta.</p>
-      </div>
-    </footer>
-    <!-- end footer -->
+  </div>
+  <div style="height: 2px;background-color: #878E9D;"></div>
+  <footer class="container-fluid">
+    <div class="bg-light text-secondary p-3 text-center">
+      <p class="mb-0">Copyright © 2023. Seluruh hak cipta.</p>
+    </div>
+  </footer>
+  <!-- end footer -->
   </div>
   <!-- end Content -->
 
@@ -209,35 +279,35 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="assets/js/loadpage.js"></script>
   <script>
-   document.querySelectorAll('.read-more-btn').forEach(function(button) {
-    button.addEventListener('click', function () {
+    document.querySelectorAll('.read-more-btn').forEach(function (button) {
+      button.addEventListener('click', function () {
         var additionalText = this.parentNode.querySelector('.additional-text');
 
         if (additionalText.style.display === 'none' || additionalText.style.display === '') {
-            additionalText.style.display = 'block';
-            this.innerText = 'Read Less';
+          additionalText.style.display = 'block';
+          this.innerText = 'Read Less';
         } else {
-            additionalText.style.display = 'none';
-            this.innerText = 'Read More';
+          additionalText.style.display = 'none';
+          this.innerText = 'Read More';
         }
+      });
     });
-});
-   
-document.getElementById('searchForm').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent the default form submission
 
-    // Get the search query from the input field
-    const searchQuery = document.getElementById('searchInput').value;
+    document.getElementById('searchForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the default form submission
 
-    // Perform a mock search (replace this with your actual search logic)
-    performSearch(searchQuery);
-});
+      // Get the search query from the input field
+      const searchQuery = document.getElementById('searchInput').value;
 
-function performSearch(query) {
-    // For simplicity, let's just display the search query as the result
-    const searchResultsContainer = document.getElementById('searchResults');
-    searchResultsContainer.innerHTML = `<p>Search results for: <strong>${query}</strong></p>`;
-}
+      // Perform a mock search (replace this with your actual search logic)
+      performSearch(searchQuery);
+    });
+
+    function performSearch(query) {
+      // For simplicity, let's just display the search query as the result
+      const searchResultsContainer = document.getElementById('searchResults');
+      searchResultsContainer.innerHTML = `<p>Search results for: <strong>${query}</strong></p>`;
+    }
 
 
   </script>

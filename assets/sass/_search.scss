@@ -1,0 +1,26 @@
+// _search.scss
+.search-bar {
+    margin-top: calculate-padding(10px);
+  
+    .search-input {
+      padding: calculate-padding(5px);
+      width: 93%;
+      border: 1px solid $border-color;
+      border-radius: calculate-border-radius(5px);
+    }
+  
+    .search-button {
+      padding: calculate-padding(5px) calculate-padding(10px);
+      background-color: $primary-color;
+      color: #fff;
+      border: none;
+      border-radius: calculate-border-radius(5px);
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+  
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+  

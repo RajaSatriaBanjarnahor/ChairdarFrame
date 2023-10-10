@@ -1,0 +1,227 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+
+.section {
+  background-color: #e6e6e6;
+  margin-top: 0px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.nav-item {
+  margin: 0 auto;
+}
+
+.nav-pills .nav-link {
+  color: #878E9D;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+.search-bar .search-input {
+  padding: 10px;
+  width: 93%;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+.search-bar .search-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.search-bar .search-button:hover {
+  background-color: #555;
+}
+
+.category-checkboxes {
+  margin-top: 20px;
+}
+.category-checkboxes label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-list .product-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  margin: 50px 10px 0;
+  border-radius: 20px;
+}
+.product-list .product-item:hover {
+  transform: scale(1.05);
+}
+.product-list .product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.product-list .product-item h2 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #555;
+}
+.product-list .product-item p {
+  font-size: 1.1rem;
+  color: #888;
+}
+.product-list .product-item button {
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.product-list .product-item button:hover {
+  background-color: #555;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+
+.section {
+  background-color: #e6e6e6;
+  margin-top: 0px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.nav-item {
+  margin: 0 auto;
+}
+
+.nav-pills .nav-link {
+  color: #878E9D;
+}
+
+.corners {
+  border-radius: 360px;
+  background: #E6E8EC;
+  padding: 8px 10px;
+  width: 200px;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+.search-bar .search-input {
+  padding: 10px;
+  width: 93%;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+.search-bar .search-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.search-bar .search-button:hover {
+  background-color: #555;
+}
+
+.category-checkboxes {
+  margin-top: 20px;
+}
+.category-checkboxes label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-list .product-item:nth-child(1) {
+  background-color: #1a1a1a;
+}
+.product-list .product-item:nth-child(2) {
+  background-color: black;
+}
+.product-list .product-item:nth-child(3) {
+  background-color: black;
+}
+.product-list .product-item:nth-child(4) {
+  background-color: black;
+}
+.product-list .product-item:nth-child(5) {
+  background-color: black;
+}
+.product-list .product-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  margin: 50px 10px 0;
+  border-radius: 20px;
+}
+.product-list .product-item:hover {
+  transform: scale(1.05);
+}
+.product-list .product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.product-list .product-item h2 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #555;
+}
+.product-list .product-item p {
+  font-size: 1.1rem;
+  color: #888;
+}
+.product-list .product-item button {
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.product-list .product-item button:hover {
+  background-color: #555;
+}
+
+/*# sourceMappingURL=Products.css.map */
