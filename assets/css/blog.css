@@ -6,44 +6,6 @@ body {
     margin-bottom: 20px;
     text-align: center;
  }
- /* CSS for Section 3 */
-.col-12.d-flex.align-items-center.justify-content-center.pt-5 {
-  margin-top: 5rem; /* Adjust as needed */
-}
-
-.card.row.shadow-sm.d-flex.flex-row {
-  border: none; /* Remove border if not needed */
-}
-
-.col-sm-6.col-12.d-flex.align-items-center.flex-wrap.justify-content-center {
-  padding: 0; /* Remove padding if not needed */
-}
-
-.img-fluid.px-md-0.px-5 {
-  max-width: 100%; /* Ensure the image is responsive */
-  height: auto;
-}
-
-.col-sm-6.col-12.read-more-section.text-start {
-  padding: 20px; /* Add padding to the text section */
-}
-
-.container-fluid.p-5 {
-  height: 100%; /* Ensure the container takes up the full height */
-}
-
-h2 {
-  margin-bottom: 20px; /* Add margin to the heading */
-}
-
-p.additional-text {
-  margin-bottom: 20px; /* Add margin to the additional text */
-}
-
-.btn.btn-primary.read-more-btn {
-  margin-top: 20px; /* Add margin to the button */
-}
-
    
    .text {
     display: none;
