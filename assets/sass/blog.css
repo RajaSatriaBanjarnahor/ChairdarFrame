@@ -1,0 +1,83 @@
+/*# sourceMappingURL=blog.css.map */
+body {
+    font-family: Arial, sans-serif;
+ }
+
+   .read-more-section {
+    margin-bottom: 20px;
+    text-align: center;
+ }
+   
+   .text {
+    display: none;
+ }
+ 
+/* Make text responsive */
+@media (max-width: 576px) {
+  .text {
+      font-size: 14px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .text {
+      font-size: 16px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .text {
+      font-size: 18px;
+  }
+}
+.initial-text,
+.additional-text {
+  font-size: medium; /* atau sesuaikan dengan preferensi Anda */
+}
+
+ .navbar {
+  padding: 10px;
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+}
+
+.form-control {
+  flex: 1;
+}
+
+  .bg-responsive{
+   background-image: url($url);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
+ .card {
+   display: inline-block;
+ }
+
+ .card img {
+  width: 100%;
+  height: auto;
+  margin-right: 0;
+}
+
+.card text {
+  font-size: medium; /* atau sesuaikan dengan preferensi Anda */
+  /* tambahkan gaya lainnya jika diperlukan */
+}
+
+ .Tag{
+   width: 100px;
+   height: 50px;
+ }
+
+   p {
+    margin-top: 20px;
+ }
+
+ footer {
+  text-align: center;
+}
