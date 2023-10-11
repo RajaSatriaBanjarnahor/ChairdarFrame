@@ -38,6 +38,27 @@ $large-screen-max: 992px;
 @use 'mixins';
 @use 'functions';
 
+// Define the number of blog sections
+$blog-sections: 4;
+
+// Loop to generate styles for each section
+@for $i from 1 through $blog-sections {
+  .blog-section-#{$i} {
+    margin-top: 20px;
+  }
+}
+
+    h2 {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666;
+    }
+
 body {
 font-family: variables.$font-family;
 }
@@ -93,10 +114,6 @@ text {
 .Tag {
 width: 100px;
 height: 50px;
-}
-
-p {
-margin-top: 20px;
 }
 
 footer {
