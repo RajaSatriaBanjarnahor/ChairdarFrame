@@ -1,3 +1,4 @@
+@import 'setingan buton';
 @function calculate-font-size($size) {
   @return $size + 2;
 }
@@ -23,7 +24,9 @@ $large-screen-max: 992px;
 }
 }
 
-//variabel
+@use 'variables';
+@use 'mixins';
+@use 'functions';
 
 body {
 font-family: variables.$font-family;
