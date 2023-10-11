@@ -1,4 +1,7 @@
-// Definisi variabel warna
+@function calculate-width($width, $padding) {
+    @return $width (+(2 * $padding));
+}
+
 $primary-color: #000000;
 $secondary-color: #2c2b2b;
 
