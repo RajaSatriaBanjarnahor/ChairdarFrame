@@ -3,6 +3,10 @@
   @return $size + 2;
 }
 
+@function calculateTotalWidth($width, $padding) {
+  @return $width + 2 * $padding;
+}
+
 @import 'variabel';
 $font-family: Arial, sans-serif;
 $primary-color: #333;
