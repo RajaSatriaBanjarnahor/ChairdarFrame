@@ -1,4 +1,21 @@
-// _mixinsframes.scss
-@function calculate-width($width, $padding) {
-    @return $width (+(2 * $padding));
+// Mixin untuk mengatur warna teks berdasarkan tipe produk
+@mixin product-text-color($type) {
+    @if $type =='popular' {
+        color: #555;
+    }
+
+    @else {
+        color: #888;
+    }
+}
+
+// Mixin untuk mengatur latar belakang tombol berdasarkan tipe produk
+@mixin button-background-color($type) {
+    @if $type =='popular' {
+        background-color: $primary-color;
+    }
+
+    @else {
+        background-color: $secondary-color;
+    }
 }
