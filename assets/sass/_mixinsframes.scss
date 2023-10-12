@@ -1,0 +1,4 @@
+// _mixinsframes.scss
+@function calculate-width($width, $padding) {
+    @return $width (+(2 * $padding));
+}

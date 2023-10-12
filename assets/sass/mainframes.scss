@@ -1,0 +1,57 @@
+// mainframes.scss
+@import 'variablesframes'; // Ini akan mengimpor _variablesframes.scss
+@import 'mixinsframes'; // Ini akan mengimpor _mixinsframes.scss
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-list .product-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    margin: 50px 20px 0;
+    border-radius: 5px;
+}
+
+.product-list .product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-list .product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-list .product-item h2 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #555; // Menggunakan warna teks dari variabel
+}
+
+.product-list .product-item p {
+    font-size: 1.1rem;
+    color: #888; // Menggunakan warna teks dari variabel
+}
+
+.product-list .product-item button {
+    margin-top: 10px;
+    background-color: $primary-color; // Menggunakan warna latar belakang dari variabel
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.product-list .product-item button:hover {
+    background-color: $secondary-color; // Menggunakan warna latar belakang dari variabel
+}
